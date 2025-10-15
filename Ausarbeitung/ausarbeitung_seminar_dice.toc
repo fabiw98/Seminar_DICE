@@ -1,0 +1,21 @@
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung und Problemstellung}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Weitere Kapitel}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Bausteine}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Abschnitt}{2}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Unterabschnitt}{3}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Abbildungen und Tabellen}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Listings}{3}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Mathematische Formel}{4}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Sätze, Lemmata, Definitionen, Beweise, Beispiele}{5}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Fußnoten}{6}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Literaturverweise}{6}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Beispiel-Kapitel}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Warum existieren unterschiedliche Konsistenzmodelle?}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Klassifizierung eines Konsistenzmodells}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Linearisierbarkeit (atomic consistency)}{8}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{10}{chapter.4}%
+\contentsline {chapter}{Literaturverzeichnis}{11}{chapter*.13}%
+\contentsline {chapter}{Glossar}{12}{appendix.A}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{13}{appendix.B}%
