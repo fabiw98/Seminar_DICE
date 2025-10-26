@@ -70,11 +70,11 @@
 \title{Titel der Arbeit auf Deutsch}
 \subtitle{English Title}
 
-\author{Autor}
+\author{Fabian Wagner}
 
 \supervisor{Titel Vorname Nachname}
 
-\address{Ort}
+\address{Trier}
 \submitdate{DD.MM.YYYY}
 
 %------------------ Projektart -------------------------------------------------
@@ -89,20 +89,24 @@
 
 %------------------ Vorwort, Kurzfassung, Verzeichnisse ------------------------
 \frontmatter
-\input{chapters/Vorwort}								% Vorwort (optional)
+%\input{chapters/Vorwort}								% Vorwort (optional)
 \input{chapters/Kurzfassung}							% Kurzfassung/Abstract
 \tableofcontents										% Inhaltsverzeichnis
-\listoffigures											% Abbildungsverzeichnis (optional)
-\listoftables											% Tabellenverzeichnis (optional)
-\lstlistoflistings										% Listings (optional)
+%\listoffigures											% Abbildungsverzeichnis (optional)
+%\listoftables											% Tabellenverzeichnis (optional)
+%\lstlistoflistings										% Listings (optional)
 
 
 %------------------ Kapitel ----------------------------------------------------
 \mainmatter
 \input{chapters/EinleitungProblemstellung}
-\input{chapters/WeitereKapitel}
-\input{chapters/Beispiel}
-\input{chapters/ZusammenfassungAusblick}
+\input{chapters/Grundlagen}					% Grundlegende Begriffe und Terminologien
+\input{chapters/Methodik} 					% Methodik vorstellen + Erklärung + Beispiel
+\input{chapters/BewertungDerErklärungen} 	% Messbarkeit + Bewertung der Erklärungsqualität
+\input{chapters/PraktischeAnwendung}		% Anwendbarkeit in der Praxis disktuieren
+%\input{chapters/WeitereKapitel}
+%\input{chapters/Beispiel}
+\input{chapters/ZusammenfassungAusblick} 
 
 
 %------------------ Literaturverzeichnis & Index -------------------------------
@@ -113,7 +117,7 @@
 
 %------------------ Anhänge ----------------------------------------------------
 \begin{appendix}
-	\include{chapters/Glossar}							% Glossar (optional)
+%	\include{chapters/Glossar}							% Glossar (optional)
 	\include{chapters/Eigenstaendigkeitserklaerung}		% Eigenständigkeitserklärung
 \end{appendix}
 
