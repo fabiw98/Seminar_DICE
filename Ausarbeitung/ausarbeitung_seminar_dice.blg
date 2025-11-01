@@ -4,95 +4,88 @@ The top-level auxiliary file: ausarbeitung_seminar_dice.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: geralpha.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
-Reallocating 'name_of_file' (item size: 1) to 21 items.
-A level-1 auxiliary file: chapters/Glossar.aux
 Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: chapters/Eigenstaendigkeitserklaerung.aux
 Database file #1: literatur.bib
-You're missing a field name---line 37 of file literatur.bib
+You're missing a field name---line 65 of file literatur.bib
  : 
  : %%  author    = {George Coulouris and Jean Dollimore and Tim Kindberg},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 57 of file literatur.bib
+You're missing a field name---line 85 of file literatur.bib
  : 
  : %%  author    = {Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 191 of file literatur.bib
+You're missing a field name---line 219 of file literatur.bib
  : 
  : %  author  = {David R. Cheriton},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 233 of file literatur.bib
+You're missing a field name---line 261 of file literatur.bib
  : 
  : %  author = {Tim Gottwald and Rainer Oechsle},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 249 of file literatur.bib
+You're missing a field name---line 277 of file literatur.bib
  : 
  : %  author = {Volker Nannen},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 289 of file literatur.bib
+You're missing a field name---line 317 of file literatur.bib
  : 
  : %  author      = {David Mosberger},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 309 of file literatur.bib
+You're missing a field name---line 337 of file literatur.bib
  : 
  : %  author      = {Peter Malte},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 371 of file literatur.bib
+You're missing a field name---line 399 of file literatur.bib
  : 
  : %  key          = {{Wikipedia: Programmausdruck}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in Gottwald:03
-Warning--empty author in Gottwald:03
-Warning--empty title in Gottwald:03
-Warning--empty school in Gottwald:03
-Warning--empty year in Gottwald:03
 You've used 1 entry,
             2768 wiz_defined-function locations,
-            607 strings with 5178 characters,
-and the built_in function-call counts, 234 in all, are:
-= -- 19
-> -- 1
-< -- 0
-+ -- 0
-- -- 0
-* -- 24
-:= -- 37
-add.period$ -- 1
+            610 strings with 5383 characters,
+and the built_in function-call counts, 645 in all, are:
+= -- 65
+> -- 25
+< -- 1
++ -- 9
+- -- 9
+* -- 47
+:= -- 99
+add.period$ -- 2
 call.type$ -- 1
-change.case$ -- 3
+change.case$ -- 6
 chr.to.int$ -- 1
-cite$ -- 7
-duplicate$ -- 12
-empty$ -- 21
-format.name$ -- 0
-if$ -- 42
+cite$ -- 1
+duplicate$ -- 30
+empty$ -- 50
+format.name$ -- 10
+if$ -- 144
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 6
-num.names$ -- 0
-pop$ -- 11
+missing$ -- 1
+newline$ -- 7
+num.names$ -- 3
+pop$ -- 9
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 8
 quote$ -- 0
-skip$ -- 9
+skip$ -- 30
 stack$ -- 0
-substring$ -- 8
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 39
+swap$ -- 15
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 8
-warning$ -- 5
-while$ -- 0
+warning$ -- 0
+while$ -- 6
 width$ -- 2
-write$ -- 9
+write$ -- 14
 (There were 8 error messages)

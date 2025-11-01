@@ -1,6 +1,10 @@
-\begin{thebibliography}{Got}
+\begin{thebibliography}{MST20}
 
-\bibitem[Got]{Gottwald:03}
-\btxphdthesis{}.
+\bibitem[MST20]{mothilal2020dice}
+{\sc Mothilal, Ramaravind~K}, {\sc Amit Sharma} \btxandlong{}\ {\sc Chenhao
+  Tan}: {\em Explaining machine learning classifiers through diverse
+  counterfactual explanations}.
+\newblock \Btxinlong{}\ {\em Proceedings of the 2020 Conference on Fairness,
+  Accountability, and Transparency}, \btxpageslong{}\ 607--617, 2020.
 
 \end{thebibliography}
