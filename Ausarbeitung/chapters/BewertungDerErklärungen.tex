@@ -6,6 +6,45 @@
 - wie lauten die Metriken welche zur auswertung verwendet wurden?
 - sind die metriken sinnvoll und gut?
 
+- distanzfunktionen in grundlagen kapitel oder hier lassen?
+
+\begin{equation}\label{dist_cont}
+	dist\_cont(c,x) = \frac{1}{d_{cont}} \sum_{p=1}^{d_{cont}}{\frac{|c^p-x^p|}{MAD_p}}
+\end{equation}
+
+\begin{equation}\label{dist_cat}
+	dist\_cat(c,x) = \frac{1}{d_{cat}} \sum_{p=1}^{d_{cat}}{I(c^p \ne x^p)}
+\end{equation}
+
+- Validity
+\begin{equation}\label{validity}
+	\%ValidCFs = \frac{|\{unique instances in C s.t. f(c)>0.5\}|}{k}
+\end{equation}
+
+- Proximity
+\begin{equation}\label{proximity_contc}
+	ContinousProximity: - \frac{1}{k} \sum_{i=1}^{k}{dist\_cont(c_i,x)}
+\end{equation}
+\begin{equation}\label{proximity_cat}
+	CategoricalProximity: 1 - \frac{1}{k} \sum_{i=1}^{k}{dist\_cat(c_i,x)}
+\end{equation}
+
+- Sparsity
+\begin{equation}\label{sparsity_metric}
+	Sparsity: 1- \frac{1}{kd} \sum_{i=1}^{k} \sum_{l=1}^{d}{1_{[c_i^l \ne x_i^l]}}
+\end{equation}
+
+- Diversity
+\begin{equation}\label{diversity_metric}
+
+\end{equation}
+
+- Count-Diversity
+\begin{equation}\label{count-diversity}
+
+\end{equation}
+
+
 \section{Bewertung}
 - ist DICE besser als zb LIME?
 - Gründe für die Unterschiede
