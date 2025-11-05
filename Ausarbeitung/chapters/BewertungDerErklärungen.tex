@@ -36,12 +36,12 @@
 
 - Diversity
 \begin{equation}\label{diversity_metric}
-
+	Diversity: \Delta = \frac{1}{C_k^2} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k}{dist(c_i,c_j)}
 \end{equation}
 
 - Count-Diversity
 \begin{equation}\label{count-diversity}
-
+	Count-Diversity: \Delta = \frac{1}{C_k^2d} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k} \sum_{l=1}^{d}{1_{[c_i^l \ne c_j^l]}}
 \end{equation}
 
 

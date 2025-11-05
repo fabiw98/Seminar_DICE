@@ -9,10 +9,10 @@
 \contentsline {section}{\numberline {3.2}Optimierung}{3}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Evaluation der Methode}{4}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Evaluationsmetriken}{4}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Bewertung}{4}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Anwendbarkeit und Bedeutung in der Praxis}{5}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Relevanz in der Praxis}{5}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Demonstration eines Beispiels}{5}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{6}{chapter.6}%
-\contentsline {chapter}{Literaturverzeichnis}{7}{chapter*.3}%
-\contentsline {chapter}{Eigenständigkeitserklärung}{8}{appendix.A}%
+\contentsline {section}{\numberline {4.2}Bewertung}{5}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Anwendbarkeit und Bedeutung in der Praxis}{6}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Relevanz in der Praxis}{6}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Demonstration eines Beispiels}{6}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{7}{chapter.6}%
+\contentsline {chapter}{Literaturverzeichnis}{8}{chapter*.3}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{9}{appendix.A}%
