@@ -1,12 +1,27 @@
 \chapter{Methodisches Vorgehen}
 
 \section{Zentrale Konzepte}
-- Diversity
+- Diversity via dpp
+
+\begin{equation}\label{dpp_diversity}
+	dpp\_diversity = det(K), \text{  mit }K_{i,j} = \frac{1}{1+dist(c_i,c_j)}
+\end{equation}
+
 - Proximity
+
+\begin{equation}\label{proximity}
+	Proximity = - \frac{1}{k} \sum_{i=1}^{k}{dist(c_i,x)}
+\end{equation}
+
 - Sparsity
 - 
 
 \section{Optimierung}
+% Verlustfunktion wird hier erläutert
 
-\section{Alternative Ansätze} %Optional falls noch Luft ist
-- LIME vielleicht 
+\begin{equation}\label{loss-function}
+	C(x) = arg min \frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)} + \frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)} - \lambda_2  dpp_diversity(c_1,...,c_k)
+\end{equation}
+
+%\section{Alternative Ansätze} %Optional falls noch Luft ist
+%- LIME vielleicht 
