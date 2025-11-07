@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -807,23 +807,23 @@ Overfull \hbox (23.48793pt too wide) detected at line 36
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--46
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
 
  []
 
-) (chapters/BewertungDerErklärungen.tex [5]
+[5]) (chapters/BewertungDerErklärungen.tex [6]
 Kapitel 4.
-[6
+[7
 
 
-]) (chapters/PraktischeAnwendung.tex [7]
+]) (chapters/PraktischeAnwendung.tex [8]
 Kapitel 5.
-) (chapters/ZusammenfassungAusblick.tex [8
+) (chapters/ZusammenfassungAusblick.tex [9
 
 
 ]
 Kapitel 6.
-) [9
+) [10
 
 
 ] (ausarbeitung_seminar_dice.bbl
@@ -834,7 +834,7 @@ c/12 Siham Ta-bik\OT1/cmr/m/n/12 , \OT1/cmr/m/sc/12 Sal-va-dor
 
 )
 No file ausarbeitung_seminar_dice.ind.
-[10
+[11
 
 
 
@@ -867,7 +867,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[11
+[12
 
 
 
@@ -946,7 +946,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-) [12] (ausarbeitung_seminar_dice.aux
+) [13] (ausarbeitung_seminar_dice.aux
 (chapters/Eigenstaendigkeitserklaerung.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -954,12 +954,12 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: D7A88236087AD784414FA2427A79EBE4;2748.
+(rerunfilecheck)             Checksum: DFF39B5021685E7CC394BB93C371D762;2753.
  ) 
 Here is how much of TeX's memory you used:
- 16474 strings out of 474486
- 267057 string characters out of 5743756
- 1936542 words of memory out of 5000000
+ 16475 strings out of 474486
+ 267064 string characters out of 5743756
+ 1939542 words of memory out of 5000000
  38437 multiletter control sequences out of 15000+600000
  568060 words of font info for 73 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -984,9 +984,9 @@ eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (15 pages, 673314 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (16 pages, 676723 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

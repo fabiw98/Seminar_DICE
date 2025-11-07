@@ -28,25 +28,29 @@ Eine weitere Eigenschaft für die Machbarkeit oder auch Umsetzbarkeit der kontra
 Weiterhin ist zu beachten, dass zwar ein Counterfactual ähnlich zu dem ursprünglichen Feature-Vektor sein kann, jedoch für den Anwender nicht umsetzbar ist. Aus diesem Grund muss es die Möglichkeit geben, den Wertebereich von Eigenschaften einzuschränken und zum anderen die Änderung von Eigenschaften vollständig zu verhindern.\cite{mothilal2020dice}
 
 
-\section{Bestimmung der Counterfactuals}
+\section{Optimierung der Counterfactuals}
 
-DiCE hat das Ziel eine Menge an $k$ Counterfactuals für einen Eingabevektor $x$ zu finden. Um die optimale Menge $C(x)$ zu ermitteln, wird die \textbf{Verlustfunktion} in Gleichung \ref{loss-function} verwendet und nach den Argumente gesucht, welche die Gesamtfunktion minimieren.\cite{mothilal2020dice}
+DiCE hat das Ziel eine Menge an $k$ Counterfactuals für einen Eingabevektor $x$ zu finden. Um die optimale Menge $C(x)$ zu ermitteln, wird die \textbf{Verlustfunktion} in Gleichung \ref{loss-function} verwendet und nach den Argumenten gesucht, welche die Gesamtfunktion minimieren. Die Optimierung wird über ein Gradientenabstiegsverfahren realisiert, wobei die $k$ Counterfactuals zufällig initialisiert werden.\cite{mothilal2020dice}
 \begin{equation}\label{loss-function}
 	C(x) = \arg \min_{c_{1}, \dots, c_{k}} \underbrace{\frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)}}_{\text{Term 1: Gültigkeit}} + \underbrace{\frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)}}_{\text{Term 2: Proximität}} - \underbrace{\lambda_2 \cdot dpp\_diversity(c_1,...,c_k)}_{\text{Term 3: Diversität}}
 \end{equation}
 % Gültigkeit
 Der erste Term beschreibt den mittleren Gültigkeitsfehler, wobei $yloss(.,.)$ die Distanz zwischen der Vorhersage $f(c_i)$ des ML-Modells für das Counterfactual $c_i$ und dem gewünschten Ergebnis $y$ misst. Die Minimierung dieses Terms führt dazu, dass die generierten Counterfactuals auch valide sind und in der gewünschten Klasse liegen.
+% yloss
+Für die Funktion $yloss$ wird eine Hinge-Loss-Funktion verwendet, da ein Counterfactual nur in der gewünschten Klasse liegen muss und nicht möglichst nah am Ziel $y$ liegen muss.
+\cite{mothilal2020dice}
+
 % Proximität
-Die Minimierung des zweiten Terms maximiert die Proximität der Counterfactuals $c_i$, sodass diese möglichst ähnlich zum ursprünglichen Eingabevektor $x$ sind. Über den Parameter $\lambda_1$ kann der Einfluss der Proximität auf das Gesamtergebnis variiert werden. Ein großes $\lambda_1$ die Wichtigkeit der Proximität erhöht, sodass die generierten Counterfactuals ähnlicher zu der Eingabe sind.
+Die Minimierung des zweiten Terms maximiert die Proximität der Counterfactuals $c_i$, sodass diese möglichst ähnlich zum ursprünglichen Eingabevektor $x$ sind. Über den Parameter $\lambda_1$ kann der Einfluss der Proximität auf das Gesamtergebnis variiert werden. Ein großes $\lambda_1$ erhöht die Wichtigkeit der Proximität erhöht, sodass die generierten Counterfactuals ähnlicher zu der Eingabe sind.
+% dist / MAD
+Kategorische Features verwenden eine 0/1-Funktion, sodass in einem Counterfactual geänderte Features mit 1 und unveränderte Features mit 0 gekennzeichnet werden. Kontinuierliche Features verwenden eine $l_1$-Distanz, welche durch den Median der absoluten Abweichungen (MAD) dividiert wird. Dies skaliert die Distanz, um Änderungen fair zu gewichten.
+\cite{mothilal2020dice}
+
 % Diversität
-Um die Gesamtfunktion zu minimieren, muss der dritte Term maximiert werden. Die Gewichtung der Diversität wird mithilfe von $\lambda_2$ festgelegt., wobei eine Erhöhung des Parameters die Unterschiede zwischen den Counterfactuals erhöht. \cite{mothilal2020dice}
+Um die Gesamtfunktion zu minimieren, muss der dritte Term maximiert werden. Die Gewichtung der Diversität wird mithilfe von $\lambda_2$ festgelegt, wobei eine Erhöhung des Parameters die Unterschiede zwischen den Counterfactuals erhöht. \cite{mothilal2020dice}
 \\
 \\
-Die Verlustfunktion bestimmt eine optimale Menge an Counterfactuals bezüglich Gültigkeit, Proximität und Diversität, vernachlässigt jedoch die Sparsität. Aus diesem Grund erfolgt eine Nachbearbeitung der CFs, wobei alle kontinuierlichen Eigenschaften
+% Sparsität
+Die Verlustfunktion bestimmt eine optimale Menge an Counterfactuals bezüglich Gültigkeit, Proximität und Diversität, vernachlässigt jedoch die Sparsität. Aus diesem Grund erfolgt eine Nachbearbeitung der CFs, um die Sparsität zu erhöhen. Dazu wird ein Greedy-Algorithmus verwendet, welcher jedes Counterfactuals einzeln betrachtet. Der Algorithmus versucht jedes kontinuierliche Feature des CFs $c_i$ auf den Wert des ursprünglichen Eingabevektors $x$ zurückzusetzen, ohne dass sich die Vorhersage des ML-Modells $f(c_i)$ ändert. Dabei wird das Zurücksetzen zuerst bei Features mit geringen Änderungen versucht.\cite{mothilal2020dice}
 
-% ERläutere Ablauf 
 
-%\section{Alternative Ansätze} %Optional falls noch Luft ist
-%- LIME vielleicht 
-
-% was ist mit hinge loss l1 oder l2? bzw die spezifische wahl der loss funktion
