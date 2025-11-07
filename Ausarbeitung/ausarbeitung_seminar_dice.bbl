@@ -1,4 +1,18 @@
-\begin{thebibliography}{MST20}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BATGL{\etalchar{+}}19}
+
+\bibitem[BATGL{\etalchar{+}}19]{barredo2019explainable}
+{\sc Barredo~Arrieta, Alejandro}, {\sc Siham Tabik}, {\sc Salvador
+  Garc{\'\i}a~L{\'o}pez}, {\sc Daniel Molina~Cabrera}, {\sc Francisco
+  Herrera~Triguero}, {\sc Natalia~Ana D{\'\i}az~Rodr{\'\i}guez}
+  \btxetalshort{.}: {\em Explainable Artificial Intelligence (XAI): Concepts,
+  taxonomies, opportunities and challenges toward responsible AI}.
+\newblock 2019.
+
+\bibitem[LG19]{8882211}
+{\sc Loyola-González, Octavio}: {\em Black-Box vs. White-Box: Understanding
+  Their Advantages and Weaknesses From a Practical Point of View}.
+\newblock IEEE Access, 7:154096--154113, 2019.
 
 \bibitem[MST20]{mothilal2020dice}
 {\sc Mothilal, Ramaravind~K}, {\sc Amit Sharma} \btxandlong{}\ {\sc Chenhao

@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Einleitung und Problemstellung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Grundlegende Begriffe}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Definition von DiCE}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Definition von DiCE}{3}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Methodisches Vorgehen}{4}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Zentrale Konzepte}{4}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Optimierung}{4}{section.3.2}%

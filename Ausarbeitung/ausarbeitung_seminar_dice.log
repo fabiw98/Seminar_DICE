@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,16 +786,10 @@ l.1 \chapter
 
 ]
 Kapitel 2.
-
-Overfull \hbox (90.25076pt too wide) in paragraph at lines 18--21
-\OT1/cmr/m/n/12 lern-ten Wis-sens ver-ar-bei-ten und klas-si-fi-zie-ren. >>>>>>
-> 40b0b912b72bae12dae93ee0ce3cc7c58e888d19 
- []
-
-) (chapters/Methodik.tex [2
+[2
 
 
-] [3]
+]) (chapters/Methodik.tex [3]
 Kapitel 3.
 ) (chapters/BewertungDerErklärungen.tex [4
 
@@ -815,7 +809,13 @@ Kapitel 6.
 ) [8
 
 
-] (ausarbeitung_seminar_dice.bbl)
+] (ausarbeitung_seminar_dice.bbl
+Underfull \hbox (badness 2088) in paragraph at lines 5--11
+[]\OT1/cmr/m/sc/12 Barredo Ar-rie-ta, Ale-jan-dro\OT1/cmr/m/n/12 , \OT1/cmr/m/s
+c/12 Siham Ta-bik\OT1/cmr/m/n/12 , \OT1/cmr/m/sc/12 Sal-va-dor
+ []
+
+)
 No file ausarbeitung_seminar_dice.ind.
 [9
 
@@ -940,10 +940,10 @@ ed.
 (rerunfilecheck)             Checksum: 021AB0F436B608C713687E80059F64A8;2647.
  ) 
 Here is how much of TeX's memory you used:
- 16460 strings out of 474486
- 266850 string characters out of 5743756
+ 16468 strings out of 474486
+ 266955 string characters out of 5743756
  1934542 words of memory out of 5000000
- 38428 multiletter control sequences out of 15000+600000
+ 38434 multiletter control sequences out of 15000+600000
  567723 words of font info for 72 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  63i,11n,67p,1114b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -965,9 +965,9 @@ amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type
 nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (14 pages, 641100 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (14 pages, 649021 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
  134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

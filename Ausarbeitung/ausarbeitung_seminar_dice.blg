@@ -7,85 +7,46 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: chapters/Eigenstaendigkeitserklaerung.aux
 Database file #1: literatur.bib
-You're missing a field name---line 65 of file literatur.bib
- : 
- : %%  author    = {George Coulouris and Jean Dollimore and Tim Kindberg},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 85 of file literatur.bib
- : 
- : %%  author    = {Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 219 of file literatur.bib
- : 
- : %  author  = {David R. Cheriton},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 261 of file literatur.bib
- : 
- : %  author = {Tim Gottwald and Rainer Oechsle},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 277 of file literatur.bib
- : 
- : %  author = {Volker Nannen},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 317 of file literatur.bib
- : 
- : %  author      = {David Mosberger},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 337 of file literatur.bib
- : 
- : %  author      = {Peter Malte},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 399 of file literatur.bib
- : 
- : %  key          = {{Wikipedia: Programmausdruck}},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You've used 1 entry,
+Warning--empty journal in barredo2019explainable
+You've used 3 entries,
             2768 wiz_defined-function locations,
-            610 strings with 5383 characters,
-and the built_in function-call counts, 645 in all, are:
-= -- 65
-> -- 25
-< -- 1
-+ -- 9
-- -- 9
-* -- 47
-:= -- 99
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 30
-empty$ -- 50
-format.name$ -- 10
-if$ -- 144
+            621 strings with 5881 characters,
+and the built_in function-call counts, 1603 in all, are:
+= -- 157
+> -- 78
+< -- 2
++ -- 28
+- -- 28
+* -- 134
+:= -- 256
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 19
+chr.to.int$ -- 3
+cite$ -- 4
+duplicate$ -- 65
+empty$ -- 114
+format.name$ -- 30
+if$ -- 341
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 7
-num.names$ -- 3
-pop$ -- 9
+missing$ -- 5
+newline$ -- 16
+num.names$ -- 9
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 25
 quote$ -- 0
-skip$ -- 30
+skip$ -- 60
 stack$ -- 0
-substring$ -- 39
-swap$ -- 15
-text.length$ -- 1
+substring$ -- 92
+swap$ -- 24
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 0
-while$ -- 6
-width$ -- 2
-write$ -- 14
-(There were 8 error messages)
+type$ -- 24
+warning$ -- 1
+while$ -- 12
+width$ -- 5
+write$ -- 37
+(There was 1 warning)
