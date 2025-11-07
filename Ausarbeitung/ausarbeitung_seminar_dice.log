@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 14:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,7 +800,18 @@ cht nur meh-re-re M[]oglichkeiten
 [4
 
 
-]) (chapters/BewertungDerErklärungen.tex [5]
+]
+Overfull \hbox (23.48793pt too wide) detected at line 36
+[][][]\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
+[] [] [] + [] \OMS/cmsy/m/n/12 ^^@ []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--46
+
+ []
+
+) (chapters/BewertungDerErklärungen.tex [5]
 Kapitel 4.
 [6
 
@@ -943,12 +954,12 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 021AB0F436B608C713687E80059F64A8;2647.
+(rerunfilecheck)             Checksum: D7A88236087AD784414FA2427A79EBE4;2748.
  ) 
 Here is how much of TeX's memory you used:
  16474 strings out of 474486
  267057 string characters out of 5743756
- 1934542 words of memory out of 5000000
+ 1936542 words of memory out of 5000000
  38437 multiletter control sequences out of 15000+600000
  568060 words of font info for 73 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -965,16 +976,17 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
 fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 :/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (15 pages, 655902 bytes).
+/cm/cmr6.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ausarbeitung_seminar_dice.pdf (15 pages, 673314 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
+ 292 PDF objects out of 1000 (max. 8388607)
  51 named destinations out of 1000 (max. 500000)
  134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

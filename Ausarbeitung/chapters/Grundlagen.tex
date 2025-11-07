@@ -13,23 +13,20 @@ Das Ergebnis erfolgt über die Angabe einer \textbf{Klasse}, zu der eine Eingabe
 % Original Input / Output? Eigentlich selbsterklärend
 Die \textbf{ursprüngliche Eingabe} bezeichnet den unveränderten Feature Vector, welcher in einer \textbf{unerwünschten Klasse} resultiert. 
 % CF / CF Klasse
-Eine \textbf{kontrafaktische Erklärung}, auch \textbf{Counterfactual} (CF) genannt, ist ein verändertes Gegenbeispiel der Eingabe, welches so gewählt wird, dass nicht die ursprünglich erhaltene, unerwünschte Klasse das Ergebnis ist, sondern eine andere Klasse. Diese erwünschte Klasse wird als \textbf{CF Klasse} bezeichnet. \cite{mothilal2020dice}
+Eine \textbf{kontrafaktische Erklärung}, auch \textbf{Counterfactual} (CF) genannt, ist ein verändertes Gegenbeispiel der Eingabe, welches so gewählt wird, dass nicht die ursprünglich erhaltene, unerwünschte Klasse das Ergebnis ist, sondern eine andere Klasse. Diese erwünschte Klasse wird als \textbf{CF Klasse} bezeichnet.\cite{mothilal2020dice}
 
 % Black-Box vs. White-Box-Modelle
 Bei ML-Modellen wird zwischen \textbf{Black-Box-} und \textbf{White-Box-Modellen} unterschieden. 
-Black-Box-Modelle sind schwer erklärbar und für Domänenexperten unverständlich, sodass ein Ergebnis nicht nachvollziehbar für einen Menschen ist. Als White-Box-Modelle werden hingegen ML-Modelle bezeichnet, die erklärbare und nachvollziehbare Resultate liefern.
-\cite{8882211}
+Black-Box-Modelle sind schwer erklärbar und für Domänenexperten unverständlich, sodass ein Ergebnis nicht nachvollziehbar für einen Menschen ist. Als White-Box-Modelle werden hingegen ML-Modelle bezeichnet, die erklärbare und nachvollziehbare Resultate liefern.\cite{8882211}
 
 % Lokale vs. Globale Erklärungsansätze
-Ein \textbf{globaler} Erklärungsansatz verfolgt das Ziel, das gesamte Entscheidungsverhalten eines ML-Modells zu verstehen. Im Gegensatz dazu verfolgen \textbf{lokale} Ansätze das Ziel ein Modell in einem eingeschränkten, weniger komplexen Lösungsraum zu erklären.
-\cite{barredo2019explainable}
+Ein \textbf{globaler} Erklärungsansatz verfolgt das Ziel, das gesamte Entscheidungsverhalten eines ML-Modells zu verstehen. Im Gegensatz dazu verfolgen \textbf{lokale} Ansätze das Ziel ein Modell in einem eingeschränkten, weniger komplexen Lösungsraum zu erklären.\cite{barredo2019explainable}
 
 
 \section{Definition von DiCE}
 % DiCE: post-hoc, black-box, lokaler Ansatz
 \textbf{Di}verse \textbf{C}ounterfactual \textbf{E}xplanations (DiCE) ist ein Erklärungsansatz, um Entscheidungen von ML-Modellen für den Menschen verständlich zu machen. Es handelt sich um ein lokales, post-hoc Verfahren für Black-Box-Modelle. Die Erklärung des Modells findet somit nach der Trainingsphase statt und dient lediglich der Bewertung, Nachvollziehbarkeit sowie dem Aufzeigen von Schwächen oder einem Bias in den Ausgaben des Modells.
-DiCE generiert zu einer Eingabe verschiedene Counterfactuals, um dem Anwender aufzuzeigen, welche Parameter sich für eine andere Klassifikation durch das ML-Modell ändern müssen. Die Counterfactuals werden so generiert, dass sie möglichst unterschiedlich sind, dabei jedoch möglichst nahe an der ursprünglichen Eingabe bleiben.
-\cite{mothilal2020dice}
+DiCE generiert zu einer Eingabe verschiedene Counterfactuals, um dem Anwender aufzuzeigen, welche Parameter sich für eine andere Klassifikation durch das ML-Modell ändern müssen. Die Counterfactuals werden so generiert, dass sie möglichst unterschiedlich sind, dabei jedoch möglichst nahe an der ursprünglichen Eingabe bleiben.\cite{mothilal2020dice}
 
 % Problem
 % Ist das nicht in der Einleitung schon beschrieben oder muss das nochmal hier hin?

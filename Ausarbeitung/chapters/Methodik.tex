@@ -6,7 +6,7 @@ In diesem Kapitel werden die zentralen Konzepte von DiCE betrachtet, welche zur 
 %- Diversity via dpp
 \textbf{Diversität} beschreibt, wie sich generierten Counterfactuals voneinander unterscheiden.
 Eine hohe Vielfältigkeit zeigt dem Anwender nicht nur mehrere Möglichkeiten zum Erreichen einer anderen Klassifikation auf, wodurch sich die Machbarkeit erhöht, sondern lässt auch größere Rückschlüsse auf das Entscheidungsverhalten des ML-Modells schließen. 
-Um Diversität zu berücksichtigen, wird in DiCE das Konzept der \textbf{D}eterminantal \textbf{P}oint \textbf{P}rocesses (DPP)  verwendet, um das \textit{Subset Selection Problem} zu lösen. Das Problem beschreibt dabei die Auswahl von wenigen CFs aus einer unendlich großen Menge an möglichen Beispielen, welche zeitgleich gültig als auch divers sind. In Gleichung \ref{dpp_diversity} beschreibt $dist(c_i,c_j)$ die Distanz zwischen zwei Counterfactuals. Somit führt eine kleine Ähnlichkeit $K_{i,j}$ der CFs zu einer großen Determinante $det(K)$ und Maximierung der Diversität. \cite{mothilal2020dice, kulesza2012determinantal}
+Um Diversität zu berücksichtigen, wird in DiCE das Konzept der \textbf{D}eterminantal \textbf{P}oint \textbf{P}rocesses (DPP)  verwendet, um das \textit{Subset Selection Problem} zu lösen. Das Problem beschreibt dabei die Auswahl von wenigen CFs aus einer unendlich großen Menge an möglichen Beispielen, welche zeitgleich gültig als auch divers sind. In Gleichung \ref{dpp_diversity} beschreibt $dist(c_i,c_j)$ die Distanz zwischen zwei Counterfactuals. Somit führt eine kleine Ähnlichkeit $K_{i,j}$ der CFs zu einer großen Determinante $det(K)$ und Maximierung der Diversität.\cite{mothilal2020dice, kulesza2012determinantal}
 \begin{equation}\label{dpp_diversity}
 	dpp\_diversity = det(K), \text{  mit }K_{i,j} = \frac{1}{1+dist(c_i,c_j)}
 \end{equation}
@@ -14,25 +14,39 @@ Um Diversität zu berücksichtigen, wird in DiCE das Konzept der \textbf{D}eterm
 %- Proximity
 Diversität alleine ist nicht ausreichend, um einem Anwender eine Erklärung zu geben. Die generierten CFs sollten nicht nur unterschiedlich sein, sondern müssen möglichst nah an der ursprünglichen Eingabe sein.
 Diese \textbf{Proximität} ist für die Machbarkeit von zentraler Bedeutung, da Anwender den meisten Nutzen aus ähnlichen Counterfactuals erhalten. 
-Die Proximität eines CFs ergibt sich aus der negative Distanz zwischen dem Counterfactual $c_i$ und dem Feature-Vektor $x$. 
+Die Proximität eines CFs ergibt sich aus der negative Distanz zwischen dem Counterfactual $c_i$ und dem Eingabevektor $x$. 
 Eine geringe Distanz resultiert in einer hohen Proximität.
-Die Berechnung der mittleren Proximität einer Menge von CFs ist in Gleichung \ref{proximity} dargestellt.
+Die Berechnung der mittleren Proximität einer Menge von CFs ist in Gleichung \ref{proximity} dargestellt.\cite{mothilal2020dice}
 \begin{equation}\label{proximity}
 	Proximity = - \frac{1}{k} \sum_{i=1}^{k}{dist(c_i,x)}
 \end{equation}
 
 %- Sparsity
-Eine weitere Eigenschaft für die Machbarkeit oder auch Umsetzbarkeit der kontrafaktischen Beispiele ist die \textbf{Sparsität}. Nach der Proximität ist auch ein Counterfactual nahe an einer Eingabe, wenn jeder Vektoreintrag minimal geändert wird. Dies ist zwar mathematisch korrekt, vernachlässigt aber den Umstand der Machbarkeit für einen Anwender. Ein Counterfactual ist einfacher umzusetzen, wenn sich möglichst wenige Eigenschaften ändern. Sparsität wird über die Anzahl an unterschiedlichen Eigenschaften zwischen Eingabe und Counterfactual gemessen.
+Eine weitere Eigenschaft für die Machbarkeit oder auch Umsetzbarkeit der kontrafaktischen Beispiele ist die \textbf{Sparsität}. Nach der Proximität ist auch ein Counterfactual nahe an einer Eingabe, wenn jeder Vektoreintrag minimal geändert wird. Dies ist zwar mathematisch korrekt, vernachlässigt aber den Umstand der Machbarkeit für einen Anwender. Ein Counterfactual ist einfacher umzusetzen, wenn sich möglichst wenige Eigenschaften ändern. Sparsität wird über die Anzahl an unterschiedlichen Eigenschaften zwischen Eingabe und Counterfactual gemessen.\cite{mothilal2020dice}
+
+% User Constraints
+Weiterhin ist zu beachten, dass zwar ein Counterfactual ähnlich zu dem ursprünglichen Feature-Vektor sein kann, jedoch für den Anwender nicht umsetzbar ist. Aus diesem Grund muss es die Möglichkeit geben, den Wertebereich von Eigenschaften einzuschränken und zum anderen die Änderung von Eigenschaften vollständig zu verhindern.\cite{mothilal2020dice}
 
 
-\section{Optimierung}
-% Verlustfunktion wird hier erläutert
-s
+\section{Bestimmung der Counterfactuals}
+
+DiCE hat das Ziel eine Menge an $k$ Counterfactuals für einen Eingabevektor $x$ zu finden. Um die optimale Menge $C(x)$ zu ermitteln, wird die \textbf{Verlustfunktion} in Gleichung \ref{loss-function} verwendet und nach den Argumente gesucht, welche die Gesamtfunktion minimieren.\cite{mothilal2020dice}
 \begin{equation}\label{loss-function}
-	C(x) = arg min \frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)} + \frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)} - \lambda_2  dpp_diversity(c_1,...,c_k)
+	C(x) = \arg \min_{c_{1}, \dots, c_{k}} \underbrace{\frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)}}_{\text{Term 1: Gültigkeit}} + \underbrace{\frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)}}_{\text{Term 2: Proximität}} - \underbrace{\lambda_2 \cdot dpp\_diversity(c_1,...,c_k)}_{\text{Term 3: Diversität}}
 \end{equation}
+% Gültigkeit
+Der erste Term beschreibt den mittleren Gültigkeitsfehler, wobei $yloss(.,.)$ die Distanz zwischen der Vorhersage $f(c_i)$ des ML-Modells für das Counterfactual $c_i$ und dem gewünschten Ergebnis $y$ misst. Die Minimierung dieses Terms führt dazu, dass die generierten Counterfactuals auch valide sind und in der gewünschten Klasse liegen.
+% Proximität
+Die Minimierung des zweiten Terms maximiert die Proximität der Counterfactuals $c_i$, sodass diese möglichst ähnlich zum ursprünglichen Eingabevektor $x$ sind. Über den Parameter $\lambda_1$ kann der Einfluss der Proximität auf das Gesamtergebnis variiert werden. Ein großes $\lambda_1$ die Wichtigkeit der Proximität erhöht, sodass die generierten Counterfactuals ähnlicher zu der Eingabe sind.
+% Diversität
+Um die Gesamtfunktion zu minimieren, muss der dritte Term maximiert werden. Die Gewichtung der Diversität wird mithilfe von $\lambda_2$ festgelegt., wobei eine Erhöhung des Parameters die Unterschiede zwischen den Counterfactuals erhöht. \cite{mothilal2020dice}
+\\
+\\
+Die Verlustfunktion bestimmt eine optimale Menge an Counterfactuals bezüglich Gültigkeit, Proximität und Diversität, vernachlässigt jedoch die Sparsität. Aus diesem Grund erfolgt eine Nachbearbeitung der CFs, wobei alle kontinuierlichen Eigenschaften
 
 % ERläutere Ablauf 
 
 %\section{Alternative Ansätze} %Optional falls noch Luft ist
 %- LIME vielleicht 
+
+% was ist mit hinge loss l1 oder l2? bzw die spezifische wahl der loss funktion
