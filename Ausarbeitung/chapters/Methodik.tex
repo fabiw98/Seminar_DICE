@@ -1,20 +1,27 @@
 \chapter{Methodisches Vorgehen}
+In diesem Kapitel werden die zentralen Konzepte von DiCE betrachtet, welche zur Generierung der Counterfactuals benötigt werden. Darunter fallen Proximität, Diversität und Sparsity unter Berücksichtigung von Machbarkeit und User-Constraints. Abschließend wird die Verlustfunktion als Möglichkeit der Optimierung von Counterfactuals untersucht.
+
 
 \section{Zentrale Konzepte}
-- Diversity via dpp
-
+%- Diversity via dpp
+\textbf{Diversität} beschreibt, wie sich generierten Counterfactuals voneinander unterscheiden.
+Eine hohe Vielfältigkeit zeigt dem Anwender nicht nur mehrere Möglichkeiten zum Erreichen einer anderen Klassifkation auf, wodurch sich die Machbarkeit erhöht, sondern lässt auch größere Rückschlüsse auf das Entscheidungsverhalten des ML-Modells schließen. 
+Um Diversität zu berücksichtigen, wird in DiCE das Konzept der \textbf{D}eterminantal \textbf{P}oint \textbf{P}rocesses (DPP)  verwendet, um das \textit{Subset Selection Problem} zu lösen. Das Problem beschreibt dabei die Auswahl von wenigen CFs aus einer unendlich großen Menge an möglichen Beispielen, welche zeitgleich gültig als auch divers sind. In Gleichung \ref{dpp_diversity} beschreibt $dist(c_i,c_j)$ die Distanz zwischen zwei Counterfactuals. Somit führt eine kleine Ähnlichkeit $K_{i,j}$ der CFs zu einer großen Determinante $det(K)$ und Maximierung der Diversität. \cite{mothilal2020dice, kulesza2012determinantal}
 \begin{equation}\label{dpp_diversity}
 	dpp\_diversity = det(K), \text{  mit }K_{i,j} = \frac{1}{1+dist(c_i,c_j)}
 \end{equation}
 
-- Proximity
+%- Proximity
+Diversität alleine ist nicht ausreichend, um einem Anwender eine Erklärung zu geben. Die generierten CFs sollten nicht nur unterschiedlich sein, sondern müssen möglichst nah an der ursprünglichen Eingabe sein.
+Diese \textbf{Proximität} ist für die Machbarkeit von zentraler Bedeutung, da Anwender den meisten Nutzen aus ähnlichen Counterfactuals erhalten. Die Proximität eines CFs ist die negative Distanz zwischen dem Counterfactual $c_i$ und dem Feature-Vektor $x$. Gleichung \ref{proximity} berechnet die mittlere Proximität einer Menge von CFs.
 
 \begin{equation}\label{proximity}
 	Proximity = - \frac{1}{k} \sum_{i=1}^{k}{dist(c_i,x)}
 \end{equation}
 
-- Sparsity
-- 
+
+%- Sparsity
+ 
 
 \section{Optimierung}
 % Verlustfunktion wird hier erläutert
@@ -22,6 +29,8 @@
 \begin{equation}\label{loss-function}
 	C(x) = arg min \frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)} + \frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)} - \lambda_2  dpp_diversity(c_1,...,c_k)
 \end{equation}
+
+% ERläutere Ablauf 
 
 %\section{Alternative Ansätze} %Optional falls noch Luft ist
 %- LIME vielleicht 

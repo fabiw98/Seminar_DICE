@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,7 +734,7 @@ bibgerm.sty: babel.sty detected
 
 pdfTeX warning: pdflatex.exe (file ./images/logo-fb-informatik.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/logo-fb-informatik.pdf, id=67, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=71, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
 Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 88.
@@ -791,22 +791,28 @@ Kapitel 2.
 
 ]) (chapters/Methodik.tex [3]
 Kapitel 3.
-) (chapters/BewertungDerErklärungen.tex [4
+
+Overfull \hbox (18.9904pt too wide) in paragraph at lines 7--10
+\OT1/cmr/m/n/12 schei-den. Ei-ne ho-he Vielf[]altigkeit zeigt dem An-wen-der ni
+cht nur meh-re-re M[]oglichkeiten
+ []
+
+[4
 
 
-]
+]) (chapters/BewertungDerErklärungen.tex [5]
 Kapitel 4.
-[5
+[6
 
 
-]) (chapters/PraktischeAnwendung.tex [6]
+]) (chapters/PraktischeAnwendung.tex [7]
 Kapitel 5.
-) (chapters/ZusammenfassungAusblick.tex [7
+) (chapters/ZusammenfassungAusblick.tex [8
 
 
 ]
 Kapitel 6.
-) [8
+) [9
 
 
 ] (ausarbeitung_seminar_dice.bbl
@@ -817,7 +823,7 @@ c/12 Siham Ta-bik\OT1/cmr/m/n/12 , \OT1/cmr/m/sc/12 Sal-va-dor
 
 )
 No file ausarbeitung_seminar_dice.ind.
-[9
+[10
 
 
 
@@ -850,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[10
+[11
 
 
 
@@ -929,45 +935,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-) [11] (ausarbeitung_seminar_dice.aux
+) [12] (ausarbeitung_seminar_dice.aux
 (chapters/Eigenstaendigkeitserklaerung.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
-ed.
-(rerunfilecheck)             Checksum: 021AB0F436B608C713687E80059F64A8;2647.
+
+
+Package rerunfilecheck Warning: File `ausarbeitung_seminar_dice.out' has change
+d.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ausarbeitung_seminar_dice.out':
+(rerunfilecheck)             Before: 68A6EEAD9A691FA9FB09490708E50EF4;2821
+(rerunfilecheck)             After:  021AB0F436B608C713687E80059F64A8;2647.
  ) 
 Here is how much of TeX's memory you used:
- 16468 strings out of 474486
- 266955 string characters out of 5743756
- 1934542 words of memory out of 5000000
- 38434 multiletter control sequences out of 15000+600000
- 567723 words of font info for 72 fonts, out of 8000000 for 9000
+ 16476 strings out of 474486
+ 267081 string characters out of 5743756
+ 1935542 words of memory out of 5000000
+ 38438 multiletter control sequences out of 15000+600000
+ 568060 words of font info for 73 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  63i,11n,67p,1114b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmcsc10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/fabia/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/fabia/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/fabia/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/fabia/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
-s/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-<C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (14 pages, 649021 bytes).
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm12
+00.pk><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/fabia/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/fabia/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/fabia/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/fa
+bia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
+Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ausarbeitung_seminar_dice.pdf (15 pages, 655781 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

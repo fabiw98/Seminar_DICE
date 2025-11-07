@@ -9,6 +9,12 @@
   taxonomies, opportunities and challenges toward responsible AI}.
 \newblock 2019.
 
+\bibitem[KT{\etalchar{+}}12]{kulesza2012determinantal}
+{\sc Kulesza, Alex}, {\sc Ben Taskar} \btxetalshort{.}: {\em Determinantal
+  point processes for machine learning}.
+\newblock Foundations and Trends{\textregistered} in Machine Learning,
+  5(2--3):123--286, 2012.
+
 \bibitem[LG19]{8882211}
 {\sc Loyola-González, Octavio}: {\em Black-Box vs. White-Box: Understanding
   Their Advantages and Weaknesses From a Practical Point of View}.
