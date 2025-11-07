@@ -1,6 +1,59 @@
 \chapter{Anwendbarkeit und Bedeutung in der Praxis}
 
+In diesem Kapitel wird DiCE als ein Werkzeug betrachtet, um bestehende Probleme in der Praxis zu lösen. Die Anwendung von DiCE wird im zweiten Abschnitt anhand eines konkreten Beispiel demonstriert.
+
+
 \section{Relevanz in der Praxis}
+
+% Problem ist, dass man nur Ergebnisse sieht aber nicht wie diese geänert werden können
+Die Anzahl der eingesetzten Black-Box-Modelle steigt in der Welt immer weiter an und trifft Entscheidungen, die das Leben vieler Menschen beeinflussen können. Beispielsweise kann ein solches Modell entscheiden, ob ein Kunde einen Kredit bekommt oder abgelehnt wird. Das Problem ist, dass der Kunde nun nicht weiß, wie er handeln kann, um den Kredit in Zukunft zu erhalten.
+% Problemlösung und geben von Handlungsmöglichkeiten
+Diese Handlungsfähigkeit wird durch die Generierung von Counterfactuals gegeben. Sie liefern dem Anwender mehrere "Was-wäre-wenn"\--Szenarien. Aufgrund der Diversität der CFs, stehen dem Anwender verschiedene Vorschläge zum Anpassen zur Verfügung.
+% Zielgruppen: Anwender, Auditoren und Entwickler
+Der Einsatz von DiCE ist nicht nur auf den Endanwender beschränkt, sondern kann auch zum Aufdecken von Bias in Modellen verwendet werden. 
+% Herausforderungen in der Praxis
+In der praktischen Anwendung muss berücksichtigt werden, dass viele Features nicht geändert werden können. Dazu zählen das Alter, die ethnische Zugehörigkeit oder auch die Senkung des Bildungsabschlusses. Dieses Problem wird in DiCE durch die manuelle Beschränkung durch den Anwender berücksichtigt, sodass nur plausible Counterfactuals generiert werden.\cite{mothilal2020dice}
+
 
 \section{Demonstration eines Beispiels}
 
+Um die zuvor diskutierte praktische Relevanz zu veranschaulichen, wird die Anwendung von DiCE an einem konkreten Fallbeispiel demonstriert. Das folgende Beispiel ist auf GitHub\footnote{https://github.com/interpretml/DiCE/blob/main/docs/source/notebooks/DiCE\_getting\_started.ipynb, Commit 1651751.} von den Autoren zur Verfügung gestellt wurden.
+
+Für die Demonstration wird der Datensatz \textit{adult} aus dem UCI Machine Learning Repository\footnote{https://archive.ics.uci.edu/dataset/2/adult} verwendet. Der Datensatz enthält 8 Features über Personen und zwei mögliche Klassifikationen. Einen Ausschnitt des Datensatzes ist in Tabelle \ref{datensatz_head} dargestellt.
+\begin{table}[h]
+	\centering
+	\caption{Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in niedriges Einkommen ($\le50$K) und hohes Einkommen ($>50$K).}
+	\label{datensatz_head}
+	\small
+	\begin{tabular}{|c | c |c |c |c |c |c |c |c |c|}
+		\hline
+		\textbf{age} & \textbf{workclass} & \textbf{education} & \textbf{marital\_status} & \textbf{occupation} & \textbf{race} & \textbf{gender} & \textbf{h/week} & \textbf{income} \\
+		\hline
+		28 & Private & Bachelors & Single & White-Collar & White & Female & 60 & 0 \\
+		30 & Self-Employed & Assoc & Married & Professional & White & Male & 65 & 1 \\
+		32 & Private & Some-college & Married & White-Collar & White & Male & 50 & 0 \\
+		20 & Private & Some-college & Single & Service & White & Female & 35 & 0 \\
+		41 & Self-Employed & Some-college & Married & White-Collar & White & Male & 50 & 0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Der Datensatz wird als erstes geladen und in Trainings- sowie Testdaten aufgeteilt. In diesem Beispiel werden 80\% des Datensatzes wird für das Training verwendet. Die Variablen \texttt{x\_train} und \texttt{x\_test} enthalten jeweils die Features der Trainings- bzw. Testdaten und \texttt{y\_train} und \texttt{y\_test} die zugehörigen Zieldaten.
+\begin{lstlisting}[caption={Aufteilung des Datensatzes in 80\% Trainings- und 20\% Testdaten.}, label={lst:dataset_split}]
+dataset = helpers.load_adult_income_dataset()
+target = dataset["income"]
+train_dataset, test_dataset, y_train, y_test = train_test_split(dataset,
+															target,
+															test_size=0.2,
+															random_state=0,
+															stratify=target)
+x_train = train_dataset.drop('income', axis=1)
+x_test = test_dataset.drop('income', axis=1)
+\end{lstlisting}
+Als nächstes muss ein Objekt mit den Trainingsdaten für DiCE konstruiert werden. Es müssen die kontinuierlichen Features deklariert werden, da diese anders behandelt werden als die kategorialen Features. Weiterhin erfolgt die Angabe der Trainingsdaten und der Zielklasse, welche das Modell lernen soll vorhersagen zu können.
+\begin{lstlisting}[caption={Konstruktion des Datenobjekts für DiCE.}, label={lst:construct_object}]
+d = dice_ml.Data(dataframe=train_dataset, continuous_features=['age', 
+								'hours_per_week'], outcome_name='income')
+\end{lstlisting}
+%todo Trainiere Modell
+%todo Generiere CFs

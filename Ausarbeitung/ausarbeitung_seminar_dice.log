@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  7 NOV 2025 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,15 +813,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--55
 
 [5]) (chapters/BewertungDerErklärungen.tex [6]
 Kapitel 4.
-[7
-
-
-]) (chapters/PraktischeAnwendung.tex [8]
-Kapitel 5.
-) (chapters/ZusammenfassungAusblick.tex [9
+) (chapters/PraktischeAnwendung.tex [7
 
 
 ]
+Kapitel 5.
+
+Overfull \hbox (10.189pt too wide) in paragraph at lines 20--20
+[][][]\OT1/cmr/m/n/9 https://github.com/interpretml/DiCE/blob/main/docs/source/
+notebooks/DiCE[]getting[]started.ipynb,
+ []
+
+[8
+
+
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 42.
+
+Overfull \hbox (6.34164pt too wide) in paragraph at lines 49--50
+[][][][][][][][][] 
+ []
+
+) (chapters/ZusammenfassungAusblick.tex [9]
 Kapitel 6.
 ) [10
 
@@ -954,16 +968,16 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: DFF39B5021685E7CC394BB93C371D762;2753.
+(rerunfilecheck)             Checksum: 7F91E9EF964DDA108789E32601E84DD2;2753.
  ) 
 Here is how much of TeX's memory you used:
- 16475 strings out of 474486
- 267064 string characters out of 5743756
- 1939542 words of memory out of 5000000
- 38437 multiletter control sequences out of 15000+600000
- 568060 words of font info for 73 fonts, out of 8000000 for 9000
+ 16769 strings out of 474486
+ 269610 string characters out of 5743756
+ 1955542 words of memory out of 5000000
+ 38715 multiletter control sequences out of 15000+600000
+ 568397 words of font info for 75 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 63i,11n,67p,1114b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,11n,67p,1114b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -983,10 +997,13 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (16 pages, 676723 bytes).
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
+/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
+C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb>
+Output written on ausarbeitung_seminar_dice.pdf (16 pages, 699477 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
