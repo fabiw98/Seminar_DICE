@@ -63,14 +63,30 @@
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Relevanz in der Praxis}{8}{section.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Demonstration eines Beispiels}{8}{section.5.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in niedriges Einkommen ($\le 50$K) und hohes Einkommen ($>50$K).}}{9}{table.caption.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in "0" niedriges Einkommen ($\le 50$K) und "1" hohes Einkommen ($>50$K).}}{9}{table.caption.3}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{datensatz_head}{{5.1}{9}{Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in niedriges Einkommen ($\le 50$K) und hohes Einkommen ($>50$K)}{table.caption.3}{}}
-\newlabel{lst:dataset_split}{{5.1}{9}{Aufteilung des Datensatzes in 80\% Trainings- und 20\% Testdaten}{lstlisting.5.1}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Aufteilung des Datensatzes in 80\% Trainings- und 20\% Testdaten.}}{9}{lstlisting.5.1}\protected@file@percent }
-\newlabel{lst:construct_object}{{5.2}{9}{Konstruktion des Datenobjekts für DiCE}{lstlisting.5.2}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Konstruktion des Datenobjekts für DiCE.}}{9}{lstlisting.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{10}{chapter.6}\protected@file@percent }
+\newlabel{datensatz_head}{{5.1}{9}{Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in "0" niedriges Einkommen ($\le 50$K) und "1" hohes Einkommen ($>50$K)}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Vorbereitungsschritte}{9}{subsection.5.2.1}\protected@file@percent }
+\newlabel{lst:datasetsplit}{{5.1}{9}{Laden und Aufteilung des Datensatzes in Trainings- und Testdaten}{lstlisting.5.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Laden und Aufteilung des Datensatzes in Trainings- und Testdaten.}}{9}{lstlisting.5.1}\protected@file@percent }
+\newlabel{lst:dataobject}{{5.2}{10}{Konstruktion des Datenobjekts für DiCE}{lstlisting.5.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Konstruktion des Datenobjekts für DiCE.}}{10}{lstlisting.5.2}\protected@file@percent }
+\newlabel{lst:modelobject}{{5.3}{10}{Konstruktion des Modellobjekts für DiCE}{lstlisting.5.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Konstruktion des Modellobjekts für DiCE.}}{10}{lstlisting.5.3}\protected@file@percent }
+\newlabel{lst:diceobject}{{5.4}{10}{Konstruktion des DiCE-Objekts}{lstlisting.5.4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.4}{\ignorespaces Konstruktion des DiCE-Objekts.}}{10}{lstlisting.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Generierung von Erklärungen}{10}{subsection.5.2.2}\protected@file@percent }
+\newlabel{lst:generatingcfs}{{5.5}{10}{Generierung von vier Counterfactuals und Visualisierung der Änderungen im Vergleich zum Eingabevektor als Tabelle}{lstlisting.5.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.5}{\ignorespaces Generierung von vier Counterfactuals und Visualisierung der Änderungen im Vergleich zum Eingabevektor als Tabelle.}}{10}{lstlisting.5.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Der Eingabevektor (Zeile 0) aus dem Testset, für den Counterfactuals generiert werden sollen. Das Modell sagt ein hohes Einkommen (0.671) voraus.}}{11}{table.caption.4}\protected@file@percent }
+\newlabel{tab:cf_input}{{5.2}{11}{Der Eingabevektor (Zeile 0) aus dem Testset, für den Counterfactuals generiert werden sollen. Das Modell sagt ein hohes Einkommen (0.671) voraus}{table.caption.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}}{11}{table.caption.5}\protected@file@percent }
+\newlabel{tab:cf_output}{{5.3}{11}{Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden}{table.caption.5}{}}
+\newlabel{lst:generatingcfsopt}{{5.6}{12}{Generierung von vier Counterfactuals und Visualisierung der Änderungen im Vergleich zum Eingabevektor als Tabelle}{lstlisting.5.6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.6}{\ignorespaces Generierung von vier Counterfactuals und Visualisierung der Änderungen im Vergleich zum Eingabevektor als Tabelle.}}{12}{lstlisting.5.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}}{12}{table.caption.6}\protected@file@percent }
+\newlabel{tab:cf_output_optimized}{{5.4}{12}{Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{13}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
@@ -79,6 +95,6 @@
 \bibcite{kulesza2012determinantal}{KT{$^{+}$}12}
 \bibcite{8882211}{LG19}
 \bibcite{mothilal2020dice}{MST20}
-\@writefile{toc}{\contentsline {chapter}{Literaturverzeichnis}{11}{chapter*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Literaturverzeichnis}{14}{chapter*.7}\protected@file@percent }
 \@input{chapters/Eigenstaendigkeitserklaerung.aux}
-\gdef \@abspage@last{16}
+\gdef \@abspage@last{19}

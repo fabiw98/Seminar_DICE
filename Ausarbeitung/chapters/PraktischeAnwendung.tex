@@ -17,12 +17,13 @@ In der praktischen Anwendung muss berücksichtigt werden, dass viele Features ni
 
 \section{Demonstration eines Beispiels}
 
-Um die zuvor diskutierte praktische Relevanz zu veranschaulichen, wird die Anwendung von DiCE an einem konkreten Fallbeispiel demonstriert. Das folgende Beispiel ist auf GitHub\footnote{https://github.com/interpretml/DiCE/blob/main/docs/source/notebooks/DiCE\_getting\_started.ipynb, Commit 1651751.} von den Autoren zur Verfügung gestellt wurden.
+Um die zuvor diskutierte praktische Relevanz zu veranschaulichen, wird die Anwendung von DiCE an einem konkreten Fallbeispiel demonstriert. Das folgende Beispiel ist auf GitHub\footnote{https://github.com/interpretml/DiCE/blob/main/docs/source/notebooks/DiCE\_getting\_started.ipynb, Commit 1651751.} von den Autoren zur Verfügung gestellt wurde. Das Beispiel verwendet \texttt{Python} und das Framework \texttt{Tensorflow 2.x}. Alternativ unterstützt DiCE auch die Machine-Learning-Frameworks \texttt{PyTorch}, \texttt{TensorFlow 1.x} und die Bibliothek \texttt{sklearn}, auf die in diesem Anwendungsbeispiel nicht näher eingegangen wird.
 
-Für die Demonstration wird der Datensatz \textit{adult} aus dem UCI Machine Learning Repository\footnote{https://archive.ics.uci.edu/dataset/2/adult} verwendet. Der Datensatz enthält 8 Features über Personen und zwei mögliche Klassifikationen. Einen Ausschnitt des Datensatzes ist in Tabelle \ref{datensatz_head} dargestellt.
+Für die Demonstration wird der Datensatz \textit{adult} aus dem UCI Machine Learning Repository\footnote{https://archive.ics.uci.edu/dataset/2/adult} verwendet. Der Datensatz enthält 8 Merkmale über Personen und die Einteilung, ob sie ein niedriges oder hohes Einkommen besitzen.
+Die ersten fünf Einträge des Datensatzes sind in Tabelle \ref{datensatz_head} dargestellt.
 \begin{table}[h]
 	\centering
-	\caption{Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in niedriges Einkommen ($\le50$K) und hohes Einkommen ($>50$K).}
+	\caption{Die ersten 5 Einträge aus dem adult Datensatz mit den Features: Alter, Beschäftigungsart, Ausbildung, Familienstand, Beruf, Ethnie, Geschlecht und Wochenarbeitszeit sowie der Klasse Einkommen, aufgeteilt in "0" niedriges Einkommen ($\le50$K) und "1" hohes Einkommen ($>50$K).}
 	\label{datensatz_head}
 	\small
 	\begin{tabular}{|c | c |c |c |c |c |c |c |c |c|}
@@ -38,22 +39,136 @@ Für die Demonstration wird der Datensatz \textit{adult} aus dem UCI Machine Lea
 	\end{tabular}
 \end{table}
 
-Der Datensatz wird als erstes geladen und in Trainings- sowie Testdaten aufgeteilt. In diesem Beispiel werden 80\% des Datensatzes wird für das Training verwendet. Die Variablen \texttt{x\_train} und \texttt{x\_test} enthalten jeweils die Features der Trainings- bzw. Testdaten und \texttt{y\_train} und \texttt{y\_test} die zugehörigen Zieldaten.
-\begin{lstlisting}[caption={Aufteilung des Datensatzes in 80\% Trainings- und 20\% Testdaten.}, label={lst:dataset_split}]
+\subsection{Vorbereitungsschritte}
+
+Der Datensatz wird zunächst geladen und in Trainings- sowie Testdaten aufgeteilt (siehe Listing \ref{lst:datasetsplit}). In diesem Beispiel werden 80\% des Datensatzes für das Training verwendet und 20\% für die Tests. Die Variablen \texttt{x\_train} und \texttt{x\_test} enthalten die Features der Trainings- bzw. Testdaten, während \texttt{y\_train} und \texttt{y\_test} die zugehörigen Zielklassen (Einkommen) enthalten. In diesem Beispiel wird kein ML-Modell trainiert, sondern ein vor-trainiertes Modell aus der DiCE-Bibliothek der Autoren verwendet.
+\begin{lstlisting}[caption={Laden und Aufteilung des Datensatzes in Trainings- und Testdaten.}, label={lst:datasetsplit}]
+# Lade den Datensatz 'adult'
 dataset = helpers.load_adult_income_dataset()
+
+# Teile den Datensatz in Training und Test auf
 target = dataset["income"]
 train_dataset, test_dataset, y_train, y_test = train_test_split(dataset,
-															target,
-															test_size=0.2,
-															random_state=0,
-															stratify=target)
+					target, test_size=0.2, random_state=0, stratify=target)
+
+# Entferne die Klassifikation aus den Datensaetzen				
 x_train = train_dataset.drop('income', axis=1)
 x_test = test_dataset.drop('income', axis=1)
 \end{lstlisting}
-Als nächstes muss ein Objekt mit den Trainingsdaten für DiCE konstruiert werden. Es müssen die kontinuierlichen Features deklariert werden, da diese anders behandelt werden als die kategorialen Features. Weiterhin erfolgt die Angabe der Trainingsdaten und der Zielklasse, welche das Modell lernen soll vorhersagen zu können.
-\begin{lstlisting}[caption={Konstruktion des Datenobjekts für DiCE.}, label={lst:construct_object}]
+
+Als nächstes wird in Listing \ref{lst:dataobject} das sogenannte Datenobjekt für DiCE konstruiert. Hierzu müssen die kontinuierlichen Features extra deklariert werden, da diese anders behandelt werden als die kategorialen Features. Weiterhin erfolgt die Angabe der Trainingsdaten und der Zielklasse, welche das Modell lernen soll, vorhersagen zu können.
+\begin{lstlisting}[caption={Konstruktion des Datenobjekts für DiCE.}, label={lst:dataobject}]
+# Konstruiere das Datenobjekt
 d = dice_ml.Data(dataframe=train_dataset, continuous_features=['age', 
 								'hours_per_week'], outcome_name='income')
 \end{lstlisting}
-%todo Trainiere Modell
-%todo Generiere CFs
+
+Es folgt die Konstruktion des Modellobjekts in Listing \ref{lst:modelobject}. Zunächst wird das Framework \texttt{TensorFlow 2.x} durch die Variable \texttt{backend} festgelegt. Diese Variable und der Speicherpfad des zugehörigen vor-trainierten ML-Modells der Autoren werden an ein Modellobjekt übergeben. Das dritte Argument des Modellobjekts bestimmt, welche Daten-Transformer-Funktion für die Datenvorverarbeitung verwendet werden soll. Die Funktion \textit{ohe-min-max} transformiert alle kategorialen Features in binäre Vektoren (One-Hot-Encoding) und skaliert alle Wertebereiche der Features auf 0 bis 1 (Min-Max-Normalisierung).
+\begin{lstlisting}[caption={Konstruktion des Modellobjekts für DiCE.}, label={lst:modelobject}]
+# Verwende Tensorflow 2.x
+backend = 'TF2'
+
+# Verwendung eines bereits vor-trainierten ML-Modells der Autoren
+ML_modelpath = helpers.get_adult_income_modelpath(backend=backend)
+
+# Konstruiere das Modellobjekt
+m = dice_ml.Model(model_path=ML_modelpath, backend=backend, 
+				  func="ohe-min-max")
+\end{lstlisting}
+
+Als letzter Vorbereitungsschritt erfolgt die Konstruktion des DiCE-Objekts in Listing \ref{lst:diceobject}, auf dem die Counterfactuals generiert werden können. Hierzu werden das Datenobjekt und das Modellobjekt übergeben. Der Parameter \texttt{method} legt fest, welches Vorgehen, hier das Gradientenabstiegsverfahren, zur Optimierung der Verlustfunktion verwendet werden soll.
+\begin{lstlisting}[caption={Konstruktion des DiCE-Objekts.}, label={lst:diceobject}]
+# Konstruktion des DiCE-Objekts
+exp = dice_ml.Dice(d, m, method="gradient")
+\end{lstlisting}
+
+\subsection{Generierung von Erklärungen}
+
+Die Initialisierungsphase ist abgeschlossen. Die Erklärungen können nun mit dem konstruierten DiCE-Objekt generiert werden, wie in Listing \ref{lst:generatingcfs} dargestellt wurde. Die Generierung erfolgt über die \texttt{generate\_ counterfactuals}-Methode unter Angabe eines Eingabevektors, der Anzahl an gewünschten Counterfactuals sowie, ob die Klassifikation der CFs gleich oder ungleich zur Eingabe sein soll.
+\begin{lstlisting}[caption={Generierung von vier Counterfactuals und Visualisierung der Änderungen im Vergleich zum Eingabevektor als Tabelle.}, label={lst:generatingcfs}]
+# Generiere Counterfactuals
+dice_exp = exp.generate_counterfactuals(x_test[1:2], total_CFs=4, 
+										desired_class="opposite")
+
+# Darstellung der Unterschiede zwischen Eingabevektor und Counterfactuals
+dice_exp.visualize_as_dataframe(show_only_changes=True)
+\end{lstlisting}
+
+Es wird als Eingabe ein Feature-Vektor aus den Testdaten verwendet, der in Tabelle \ref{tab:cf_input} dargestellt ist. Die durch den Vektor repräsentierte Person befindet sich in der niedrigen Einkommensklasse. DiCE soll nun erklären, welche Aktionen die Person durchführen könnte, um in die höhere Einkommensklasse aufzusteigen.
+\begin{table}[h]
+	\centering
+	\caption{Der Eingabevektor (Zeile 0) aus dem Testset, für den Counterfactuals generiert werden sollen. Das Modell sagt ein hohes Einkommen (0.671) voraus.}
+	\label{tab:cf_input}
+	\small
+	\begin{tabular}{|c | c |c |c |c |c |c |c |c|}
+		\hline
+		\textbf{age} & \textbf{workclass} & \textbf{education} & \textbf{marital\_status} & \textbf{occupation} & \textbf{race} & \textbf{gender} & \textbf{h/week} & \textbf{income} \\
+		\hline
+		26 & Goverment & Some-college & Single & Service & Other & Female & 10 & 0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+In Tabelle \ref{tab:cf_output} sind die vier generierten Erklärungen für die Person aus Tabelle \ref{tab:cf_input} aufgelistet. Der Parameter \texttt{show\_only\_changes} der \texttt{visualize\_as\_dataframe}-Methode ermöglicht, dass nur Änderungen im Vergleich zur Eingabe visualisiert werden. Bei näherer Betrachtung der vorgeschlagenen Änderungen fällt auf, dass diese teilweise nicht umsetzbar sind. Das erste Counterfactual erreicht die gewünschte Einkommensklasse, durch Erhöhung des Bildungsabschlusses, der Änderung des Familienstandes sowie eine wöchentliche Arbeitszeit von 90 Stunden. Diese Merkmale sind theoretisch änderbar, doch die dritte Erklärung verlangt neben einer Heirat ein Alter von 88. Die Änderung des Alters hilft einer Person zwar nicht weiter, um in eine höhere Einkommensklasse zu gelangen, jedoch kann diese Information für Entwickler und Forscher zum Aufzeigen von Bias helfen. Das vierte Counterfactual zeigt ein ähnliches Verhalten durch die Änderung des Geschlechts der betroffenen Person.
+
+\begin{table}[h]
+	\centering
+	\caption{Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}
+	\label{tab:cf_output}
+	\small
+	\begin{tabular}{|c | c |c |c |c |c |c |c |c|}
+		\hline
+		\textbf{age} & \textbf{workclass} & \textbf{education} & \textbf{marital\_status} & \textbf{occupation} & \textbf{race} & \textbf{gender} & \textbf{h/week} & \textbf{income} \\
+		\hline
+		- & - & Masters & Married & - & - & - & 90 & 1 \\
+		- & - & Doctorate & Married & - & - & - & 58 & 1 \\
+		88 & - & - & Married & - & - & - & - & 1 \\
+		- & - & Bachelors & Married & - & - & Male & 72 & 1 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Die Generierung wurde in Listing \ref{lst:generatingcfsopt} ergänzt die \texttt{generate\_counterfactuals}-Methode um die Parameter \texttt{features\_to\_vary} und \texttt{permitted\_range}. Diese Angaben schränken die Counterfacutals ein, um die Machbarkeit zu erhöhen. Hierzu werden explizit alle Features angegeben, welche in einer Erklärung durch DiCE geändert werden dürfen. Weiterhin ist es möglich Wertebereiche, wie die wöchentliche Arbeitszeit, einzuschränken, sodass die Erklärungen für einen Menschen individuell angepasst werden können, um den maximalen Nutzen aus den Erklärungen zu ziehen. Die neuen Counterfactuals sind in Tabelle \ref{tab:cf_output_optimized} dargestellt und beinhalten nun praktikablere Vorschläge.
+
+\begin{lstlisting}[caption={Generierung von vier Counterfactuals und Visualisierung der Änderungen im Vergleich zum Eingabevektor als Tabelle.}, label={lst:generatingcfsopt}]
+# Generiere Counterfactuals mit Einschraenkungen
+dice_exp = exp.generate_counterfactuals(x_test[8:9], total_CFs=4, 
+	desired_class="opposite", features_to_vary=['workclass', 
+	'hours_per_week', 'education', 'occupation', 'marital_status'], 
+	permitted_range={'hours_per_week': [10, 50]})
+
+
+# Darstellung der Unterschiede zwischen Eingabevektor und Counterfactuals
+dice_exp.visualize_as_dataframe(show_only_changes=True)
+\end{lstlisting}
+
+\begin{table}[h]
+	\centering
+	\caption{Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}
+	\label{tab:cf_output_optimized}
+	\small
+	\begin{tabular}{|c | c |c |c |c |c |c |c |c|}
+		\hline
+		\textbf{age} & \textbf{workclass} & \textbf{education} & \textbf{marital\_status} & \textbf{occupation} & \textbf{race} & \textbf{gender} & \textbf{h/week} & \textbf{income} \\
+		\hline
+		- & - & Doctorate & Married & Professional & - & - & 37 & 1 \\
+		- & - & Prof-school & Married & - & - & - & 37 & 1 \\
+		- & - & Prof-school & Married & - & - & - & 39 & 1 \\
+		- & - & Doctorate & Married & - & - & - & 45 & 1 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Es ist bei den Einschränkungen zu beachten, dass zu viele Limitierungen eine Generierung von Erklärungen verhindern kann. Wird der Familienstand in dem obigen Beispiel als unveränderlich betrachtet, so findet DiCE keine Counterfactuals mehr. Dieses Phänomen kann auf einen Bias im Datensatz $adult$ hindeuten, da die weibliche Person aus Tabelle \ref{tab:cf_input} nicht ohne Heirat in die höhere Einkommensklasse aufsteigen kann.
+
+
+
+
+
+
+
+
+
+
+
+
