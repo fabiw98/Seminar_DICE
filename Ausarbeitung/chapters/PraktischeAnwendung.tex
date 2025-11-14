@@ -39,7 +39,7 @@ Die ersten fünf Einträge des Datensatzes sind in Tabelle \ref{datensatz_head} 
 	\end{tabular}
 \end{table}
 
-\subsection{Vorbereitungsschritte}
+\subsection{Initialisierungsschritte}
 
 In Listing \ref{lst:datasetsplit} wird zunächst der Datensatz geladen und in Trainings- sowie Testdaten aufgeteilt. In diesem Beispiel werden 80\% des Datensatzes für das Training verwendet und 20\% für die Tests. Die Variablen \texttt{x\_train} und \texttt{x\_test} enthalten die Features der Trainings- bzw. Testdaten, während \texttt{y\_train} und \texttt{y\_test} die zugehörigen Zielklassen (Einkommen) enthalten. In diesem Beispiel wird kein ML-Modell trainiert, sondern ein vor-trainiertes Modell aus der DiCE-Bibliothek der Autoren verwendet.
 \begin{lstlisting}[caption={Laden und Aufteilung des Datensatzes in Trainings- und Testdaten.}, label={lst:datasetsplit}]

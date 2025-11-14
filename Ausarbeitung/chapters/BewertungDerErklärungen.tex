@@ -1,8 +1,7 @@
-\chapter{Evaluation der Methode}
+\chapter{Evaluation der Methodik}
 
-In diesem Kapitel werden quantitative Evaluationsmetriken für Gültigkeit, Proximität, Diversität und Sparsität definiert, um generierte Erklärungen bewerten zu können.
-% was ist mit local decisiobn bountry ???????????
-Anschließend ... %todo
+In diesem Kapitel werden zunächst die Evaluationsmetriken für Gültigkeit, Proximität, Diversität und Sparsität definiert, um generierte Erklärungen bewerten zu können. Anschließend werden die Metriken bewertet und das Konzept der sogenannten Entscheidungsgrenze als das angestrebte Ziel betrachtet.
+
 
 \section{Evaluationsmetriken}
 %- Validity
@@ -31,7 +30,7 @@ Sparsität ist eine Metrik, um die Machbarkeit der generierten Erklärungen zu b
 \end{equation}
 
 %- Diversity
-Die Diversitätsmetrik wird analog zur Proximität definiert und in kontinuierliche und kategoriale Diversität aufgeteilt, wie in den Gleichungen \ref{diversity_cont_metric} und \ref{diversity_cat_metric} dargestellt ist. Der Unterschied liegt darin, dass nun die Distanz der Features zwischen zwei Counterfactuals $c_i$ und $c_j$ gemessen wird. Die Anzahl aller möglichen CF-Paare ist $C_k^2$. Im Anschluss an die Berechnung der kategorialen und kontinuierlichen Distanz wird jeweils der Mittelwert über die Distanzen gebildet. Ein hoher Wert bedeutet, dass eine große Diversität zwischen den einzelnen Erklärungen vorliegt. Dies resultiert in größeren Unterschieden zwischen den Counterfactuals, womit eine höhere Machbarkeit einhergeht.
+Die Diversitätsmetrik wird analog zur Proximität definiert und in kontinuierliche und kategoriale Diversität aufgeteilt, wie in den Gleichungen \ref{diversity_cont_metric} und \ref{diversity_cat_metric} dargestellt ist. Der Unterschied liegt darin, dass nun die Distanz der Features zwischen zwei Counterfactuals $c_i$ und $c_j$ gemessen wird. Die Anzahl aller möglichen CF-Paare ist $C_k^2$. Im Anschluss an die Berechnung der kategorialen und kontinuierlichen Distanz wird jeweils der Mittelwert über die Distanzen gebildet. Ein hoher Wert bedeutet, dass eine große Diversität zwischen den einzelnen Erklärungen vorliegt. Dies resultiert in größeren Unterschieden zwischen den Counterfactuals, womit eine Umsetzbarkeit wahrscheinlicher wird.
 \cite{mothilal2020dice}
 \begin{equation}\label{diversity_cont_metric}
 	ContinuousDiversity := \Delta = \frac{1}{C_k^2} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k}{dist\_cont(c_i,c_j)}
@@ -48,8 +47,47 @@ Analog zu der Sparsität kann eine weitere Diversitätsmetrik (Gleichung \ref{co
 \end{equation}
 
 
-\section{Bewertung der Erklärungsqualität}
-- Wie aussagekräftig / gut sind die quantitativen Metriken?
-- Wie sieht es mit qualitativen Metriken aus?
-- Wie gut im Vergleich zu anderen Erkkärungsansätzen?
+\section{Bewertung der Evaluationsqualität}
+%- Wie aussagekräftig / gut sind die Metriken?
+Nachdem im vorherigen Abschnitt die Evaluationsmetriken definiert wurden, muss nun deren Güte überprüft werden. Die Funktion der Metriken ist Bewertung einer Menge von generierten Erklärungen im Hinblick auf Gültigkeit, Proximität, Sparsität und Diversität.
+
+\subsection{Bewertung der Evaluationsmetriken}
+% Gültigkeit
+Die Gültigkeitsmetrik stellt sicher, dass die Counterfactuals tatsächlich einzigartige und passende Erklärungen für das vorliegende Problem sind. Eine Erklärung, die nicht korrekt in die gewünschte Zielklasse klassifiziert wird, ist wertlos. Dies gilt auch für mehrfache Generierungen der selben Erklärung, da keine neuen Erkenntnisse gewonnen werden können.\cite{mothilal2020dice}
+
+% Proximität und Sparsität
+Um die Nähe zwischen der Eingabe und den Counterfactuals zu bewerten, sind die Proximitäts- und Sparsitätsmetrik notwendig. Sie sind zentraler Bestandteil, um eine Aussage über die Umsetzbarkeit von Erklärungen tätigen zu können. Je näher eine Erklärung an der ursprünglichen Eingabe ist, desto höher ist Umsetzbarkeit dieser Erklärung in der Praxis. Eine niedrige Proximität zwischen Erklärung und Ursprung führt zum Verlust des Zusammenhangs, wodurch die Erklärungen nutzlos werden. Dies verhindert jedoch nicht, dass alle Features gleichzeitig variiert werden. Aus diesem Grund ist Sparsität als separate Metrik relevant, da sie sicherstellt, dass nur eine minimale Anzahl an Merkmalen verändert wird. Dies garantiert, dass der Anwender nur möglichst wenige Anpassungen vornehmen muss.\cite{mothilal2020dice}
+
+% Diversität
+Die bisherigen Metriken stellen sicher, dass die Counterfactuals zwar valide, einzigartig und nahe an der Eingabe sind, vernachlässigen jedoch die Beziehung zwischen den Erklärungen selbst. Die Maximierung der Unterschiede zwischen den Counterfactuals wird durch die Diversität erreicht. Dies erhöht die Wahrscheinlichkeit, dass die CF-Menge eine für den Anwender umsetzbare Erklärung beinhaltet. Damit ist Diversität für den Anwender essentiell, um die Entscheidungsgrenze des ML-Modells besser verstehen zu können. Es ist jedoch zu beachten, dass eine hohe Diversität auf Kosten der Proximität geht, da sie konkurrierende Ziele verfolgen.\cite{mothilal2020dice}
+
+
+\subsection{Näherung der Entscheidungsgrenze}
+% Entscheidungsgrenze
+Die Optimierung der besprochenen Metriken ist wünschenswert, doch sie sind nicht das endgültige Ziel. Das Ziel von DiCE ist es, mithilfe von Counterfactuals einem Anwender die lokale Entscheidungsgrenze und Logik von ML-Modellen aufzuzeigen. Dies soll dem Anwender ermöglichen, die Entscheidungen, die ein Modell für ähnliche Eingaben treffen wird, vorherzusagen.
+% Präzision (Metrik)
+Eine Metrik für eine Vorhersage der Entscheidung, wird über die Verwendung eines weiteren ML-Modells realisiert. Dieses wird auf den generierten Counterfactuals und der ursprünglichen Eingabe trainiert und simuliert einen Anwender. Die Güte der Erklärungen kann daran gemessen werden, wie gut das zweite ML-Modell das ursprüngliche Modell imitieren kann.\cite{mothilal2020dice}
+
+
+%todo - Wie gut im Vergleich zu anderen Erkkärungsansätzen? => Lasse ich weg, wenn das ok ist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
