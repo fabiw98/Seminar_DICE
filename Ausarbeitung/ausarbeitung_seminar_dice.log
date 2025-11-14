@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  14 NOV 2025 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  14 NOV 2025 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -830,13 +830,13 @@ notebooks/DiCE[]getting[]started.ipynb,
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 45.
- [10]
+ [10] [11]
 Underfull \hbox (badness 2165) in paragraph at lines 95--95
 []\OT1/cmr/m/n/12 Listing 5.5: |Ge-ne-rie-rung von vier Coun-ter-fac-tuals und 
 Vi-sua-li-sie-rung der
  []
 
-[11] [12]
+[12]
 Underfull \hbox (badness 2165) in paragraph at lines 143--143
 []\OT1/cmr/m/n/12 Listing 5.6: |Ge-ne-rie-rung von vier Coun-ter-fac-tuals und 
 Vi-sua-li-sie-rung der
@@ -975,12 +975,12 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 1E49BB240DBEECF60268E67F14CD166D;3126.
+(rerunfilecheck)             Checksum: 79745C5E6D851B078C38B060EE1F64D4;3253.
  ) 
 Here is how much of TeX's memory you used:
  16826 strings out of 474486
  270480 string characters out of 5743756
- 1967542 words of memory out of 5000000
+ 1959542 words of memory out of 5000000
  38730 multiletter control sequences out of 15000+600000
  568397 words of font info for 75 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -1008,7 +1008,7 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
 /fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
 C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (20 pages, 733105 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (20 pages, 734129 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
