@@ -1,44 +1,44 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.5.28)  13 NOV 2025 09:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  14 NOV 2025 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./ausarbeitung_seminar_dice.tex
 (ausarbeitung_seminar_dice.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
 (i-studis.cls
 Document Class: i-studis 2005/09/23 v4.11 Springer Verlag global LaTeX2e suppor
 t for monographs
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 Class Springer-SVMono Info: extra/valid Springer sub-package 
 (Springer-SVMono)           not found in option list - using "global" style.
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count196
-\c@section=\count197
-\c@subsection=\count198
-\c@subsubsection=\count199
-\c@paragraph=\count266
-\c@subparagraph=\count267
-\c@figure=\count268
-\c@table=\count269
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-\bibindent=\dimen141
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-\betweenumberspace=\dimen142
-\headlineindent=\dimen143
-\c@chapter=\count270
-\chapstarthookwidth=\dimen144
-\svitemindent=\dimen145
-\verbatimindent=\dimen146
+\betweenumberspace=\dimen141
+\headlineindent=\dimen142
+\c@chapter=\count195
+\chapstarthookwidth=\dimen143
+\svitemindent=\dimen144
+\verbatimindent=\dimen145
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 735.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 736.
 LaTeX Font Info:    Redeclaring math symbol \Theta on input line 737.
@@ -50,28 +50,28 @@ LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 742.
 LaTeX Font Info:    Redeclaring math symbol \Phi on input line 743.
 LaTeX Font Info:    Redeclaring math symbol \Psi on input line 744.
 LaTeX Font Info:    Redeclaring math symbol \Omega on input line 745.
-\tocchpnum=\dimen147
-\tocsecnum=\dimen148
-\tocsectotal=\dimen149
-\tocsubsecnum=\dimen150
-\tocsubsectotal=\dimen151
-\tocsubsubsecnum=\dimen152
-\tocsubsubsectotal=\dimen153
-\tocparanum=\dimen154
-\tocparatotal=\dimen155
-\tocsubparanum=\dimen156
-\foot@parindent=\dimen157
-\spthmsep=\dimen158
-\c@theorem=\count271
-\c@prob=\count272
-\instindent=\dimen159
-\figgap=\dimen160
-\figcapgap=\dimen161
-\tabcapgap=\dimen162
-\c@merk=\count273
+\tocchpnum=\dimen146
+\tocsecnum=\dimen147
+\tocsectotal=\dimen148
+\tocsubsecnum=\dimen149
+\tocsubsectotal=\dimen150
+\tocsubsubsecnum=\dimen151
+\tocsubsubsectotal=\dimen152
+\tocparanum=\dimen153
+\tocparatotal=\dimen154
+\tocsubparanum=\dimen155
+\foot@parindent=\dimen156
+\spthmsep=\dimen157
+\c@theorem=\count196
+\c@prob=\count197
+\instindent=\dimen158
+\figgap=\dimen159
+\figcapgap=\dimen160
+\tabcapgap=\dimen161
+\c@merk=\count198
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
+Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
@@ -86,32 +86,31 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
-\Gm@bindingoffset=\dimen163
-\Gm@wd@mp=\dimen164
-\Gm@odd@mp=\dimen165
-\Gm@even@mp=\dimen166
-\Gm@layoutwidth=\dimen167
-\Gm@layoutheight=\dimen168
-\Gm@layouthoffset=\dimen169
-\Gm@layoutvoffset=\dimen170
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
+\Gm@bindingoffset=\dimen162
+\Gm@wd@mp=\dimen163
+\Gm@odd@mp=\dimen164
+\Gm@even@mp=\dimen165
+\Gm@layoutwidth=\dimen166
+\Gm@layoutheight=\dimen167
+\Gm@layouthoffset=\dimen168
+\Gm@layoutvoffset=\dimen169
 \Gm@dimlist=\toks20
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaT
-eX and XeLaTeX
-\babel@savecnt=\count277
-\U@D=\dimen171
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count268
+\U@D=\dimen170
 \l@unhyphenated=\language79
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count278
+\bbl@dirlevel=\count269
 
 *************************************
 * Local config file bblopts.cfg used
@@ -155,22 +154,22 @@ Package babel Info: Importing font and identification data for english
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen172
-\Gin@req@width=\dimen173
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
 ty
@@ -217,86 +216,83 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )))
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count279
-\lst@gtempboxa=\box52
+\lst@mode=\count270
+\lst@gtempboxa=\box51
 \lst@token=\toks21
-\lst@length=\count280
-\lst@currlwidth=\dimen174
-\lst@column=\count281
-\lst@pos=\count282
-\lst@lostspace=\dimen175
-\lst@width=\dimen176
-\lst@newlines=\count283
-\lst@lineno=\count284
-\lst@maxwidth=\dimen177
+\lst@length=\count271
+\lst@currlwidth=\dimen173
+\lst@column=\count272
+\lst@pos=\count273
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
+\lst@newlines=\count274
+\lst@lineno=\count275
+\lst@maxwidth=\dimen176
 
-(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-)
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count285
-\lst@skipnumbers=\count286
-\lst@framebox=\box53
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count276
+\lst@skipnumbers=\count277
+\lst@framebox=\box52
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e
 .sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count287
+\c@AlgoLine=\count278
  (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip51
+\algocf@hangindent=\skip50
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count288
+\c@checkoddpage=\count279
 ) (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip52
-\skiplinenumber=\skip53
-\skiprule=\skip54
-\skiphlne=\skip55
-\skiptext=\skip56
-\skiplength=\skip57
-\algomargin=\skip58
-\skipalgocfslide=\skip59
-\algowidth=\dimen178
-\inoutsize=\dimen179
-\inoutindent=\dimen180
-\interspacetitleruled=\dimen181
-\interspacealgoruled=\dimen182
-\interspacetitleboxruled=\dimen183
-\algocf@ruledwidth=\skip60
-\algocf@inoutbox=\box54
-\algocf@inputbox=\box55
-\AlCapSkip=\skip61
-\AlCapHSkip=\skip62
-\algoskipindent=\skip63
-\algocf@nlbox=\box56
-\algocf@hangingbox=\box57
-\algocf@untilbox=\box58
-\algocf@skipuntil=\skip64
-\algocf@capbox=\box59
-\algocf@lcaptionbox=\skip65
-\algoheightruledefault=\skip66
-\algoheightrule=\skip67
-\algotitleheightruledefault=\skip68
-\algotitleheightrule=\skip69
-\c@algocfline=\count289
-\c@algocfproc=\count290
-\c@algocf=\count291
-\algocf@algoframe=\box60
-\algocf@algobox=\box61
+\skiptotal=\skip51
+\skiplinenumber=\skip52
+\skiprule=\skip53
+\skiphlne=\skip54
+\skiptext=\skip55
+\skiplength=\skip56
+\algomargin=\skip57
+\skipalgocfslide=\skip58
+\algowidth=\dimen177
+\inoutsize=\dimen178
+\inoutindent=\dimen179
+\interspacetitleruled=\dimen180
+\interspacealgoruled=\dimen181
+\interspacetitleboxruled=\dimen182
+\algocf@ruledwidth=\skip59
+\algocf@inoutbox=\box53
+\algocf@inputbox=\box54
+\AlCapSkip=\skip60
+\AlCapHSkip=\skip61
+\algoskipindent=\skip62
+\algocf@nlbox=\box55
+\algocf@hangingbox=\box56
+\algocf@untilbox=\box57
+\algocf@skipuntil=\skip63
+\algocf@capbox=\box58
+\algocf@lcaptionbox=\skip64
+\algoheightruledefault=\skip65
+\algoheightrule=\skip66
+\algotitleheightruledefault=\skip67
+\algotitleheightrule=\skip68
+\c@algocfline=\count280
+\c@algocfproc=\count281
+\c@algocf=\count282
+\algocf@algoframe=\box59
+\algocf@algobox=\box60
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -315,91 +311,91 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
-\ex@=\dimen184
+\ex@=\dimen183
 ))
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2024/11/05 v2.17t AMS math features
-\@mathmargin=\skip70
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip69
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen185
+\pmbraise@=\dimen184
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count292
-LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count293
-\leftroot@=\count294
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count295
-\DOTSCASE@=\count296
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box62
-\strutbox@=\box63
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen186
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count297
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count298
-\dotsspace@=\muskip18
-\c@parentequation=\count299
-\dspbrk@lvl=\count300
+\inf@bad=\count283
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count284
+\leftroot@=\count285
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count286
+\DOTSCASE@=\count287
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box61
+\strutbox@=\box62
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen185
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count288
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count289
+\dotsspace@=\muskip17
+\c@parentequation=\count290
+\dspbrk@lvl=\count291
 \tag@help=\toks24
-\row@=\count301
-\column@=\count302
-\maxfields@=\count303
+\row@=\count292
+\column@=\count293
+\maxfields@=\count294
 \andhelp@=\toks25
-\eqnshift@=\dimen187
-\alignsep@=\dimen188
-\tagshift@=\dimen189
-\tagwidth@=\dimen190
-\totwidth@=\dimen191
-\lineht@=\dimen192
+\eqnshift@=\dimen186
+\alignsep@=\dimen187
+\tagshift@=\dimen188
+\tagwidth@=\dimen189
+\totwidth@=\dimen190
+\lineht@=\dimen191
 \@envbody=\toks26
-\multlinegap=\skip71
-\multlinetaggap=\skip72
+\multlinegap=\skip70
+\multlinetaggap=\skip71
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen193
-\ar@mcellbox=\box64
-\extrarowheight=\dimen194
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen192
+\ar@mcellbox=\box63
+\extrarowheight=\dimen193
 \NC@list=\toks28
-\extratabsurround=\skip73
-\backup@length=\skip74
-\ar@cellbox=\box65
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box64
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen195
-\captionmargin=\dimen196
-\caption@leftmargin=\dimen197
-\caption@rightmargin=\dimen198
-\caption@width=\dimen199
-\caption@indent=\dimen256
-\caption@parindent=\dimen257
-\caption@hangindent=\dimen258
+\caption@tempdima=\dimen194
+\captionmargin=\dimen195
+\caption@leftmargin=\dimen196
+\caption@rightmargin=\dimen197
+\caption@width=\dimen198
+\caption@indent=\dimen199
+\caption@parindent=\dimen256
+\caption@hangindent=\dimen257
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\captionstyle \ifx \@ca
@@ -414,11 +410,11 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count304
-\c@continuedfloat=\count305
+\c@caption@flags=\count295
+\c@continuedfloat=\count296
 Package caption Info: listings package is loaded.
 ) (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -429,14 +425,22 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 ) (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
 ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 ) (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -446,44 +450,42 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count306
+\c@section@level=\count297
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count307
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
 )
-(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-\@linkdim=\dimen259
-\Hy@linkcounter=\count308
-\Hy@pagecounter=\count309
- (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen258
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count310
- (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count301
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `plainpages' set `false' on input line 4040.
-Package hyperref Info: Hyper figures OFF on input line 4157.
-Package hyperref Info: Link nesting OFF on input line 4162.
-Package hyperref Info: Hyper index ON on input line 4165.
-Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Option `plainpages' set `false' on input line 4064.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count311
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen260
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count302
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen259
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -493,36 +495,36 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count312
-\Field@Width=\dimen261
-\Fld@charsize=\dimen262
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+\Fld@menulength=\count303
+\Field@Width=\dimen260
+\Fld@charsize=\dimen261
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count313
-\c@Item=\count314
-\c@Hfootnote=\count315
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver: hpdftex.
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count316
-\c@bookmark@seq@number=\count317
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -535,19 +537,19 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip75
+\Hy@SectionHShift=\skip74
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
-Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen263
-\TX@old@table=\dimen264
-\TX@old@col=\dimen265
-\TX@target=\dimen266
-\TX@delta=\dimen267
-\TX@cols=\count318
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen262
+\TX@old@table=\dimen263
+\TX@old@col=\dimen264
+\TX@target=\dimen265
+\TX@delta=\dimen266
+\TX@cols=\count309
 \TX@ftn=\toks29
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/germbib\bibgerm.sty
@@ -561,29 +563,30 @@ Package: bibgerm 2000/08/18 v0.1 Support for mixed language bibliographies
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
-Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count319
-\mult@box=\box66
-\multicol@leftmargin=\dimen268
-\c@unbalance=\count320
-\c@collectmore=\count321
-\doublecol@number=\count322
-\multicoltolerance=\count323
-\multicolpretolerance=\count324
-\full@width=\dimen269
-\page@free=\dimen270
-\premulticols=\dimen271
-\postmulticols=\dimen272
-\multicolsep=\skip76
-\multicolbaselineskip=\skip77
-\partial@page=\box67
-\last@line=\box68
-\mc@boxedresult=\box69
-\maxbalancingoverflow=\dimen273
-\mult@rightbox=\box70
-\mult@grightbox=\box71
-\mult@firstbox=\box72
-\mult@gfirstbox=\box73
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count310
+\mult@box=\box65
+\multicol@leftmargin=\dimen267
+\c@unbalance=\count311
+\c@collectmore=\count312
+\doublecol@number=\count313
+\multicoltolerance=\count314
+\multicolpretolerance=\count315
+\full@width=\dimen268
+\page@free=\dimen269
+\premulticols=\dimen270
+\postmulticols=\dimen271
+\multicolsep=\skip75
+\multicolbaselineskip=\skip76
+\partial@page=\box66
+\last@line=\box67
+\mc@boxedresult=\box68
+\maxbalancingoverflow=\dimen272
+\mult@rightbox=\box69
+\mult@grightbox=\box70
+\mult@firstbox=\box71
+\mult@gfirstbox=\box72
+\@tempa=\box73
 \@tempa=\box74
 \@tempa=\box75
 \@tempa=\box76
@@ -619,16 +622,15 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box106
 \@tempa=\box107
 \@tempa=\box108
-\@tempa=\box109
-\c@minrows=\count325
-\c@columnbadness=\count326
-\c@finalcolumnbadness=\count327
-\last@try=\dimen274
-\multicolovershoot=\dimen275
-\multicolundershoot=\dimen276
-\mult@nat@firstbox=\box110
-\colbreak@box=\box111
-\mc@col@check@num=\count328
+\c@minrows=\count316
+\c@columnbadness=\count317
+\c@finalcolumnbadness=\count318
+\last@try=\dimen273
+\multicolovershoot=\dimen274
+\multicolundershoot=\dimen275
+\mult@nat@firstbox=\box109
+\colbreak@box=\box110
+\mc@col@check@num=\count319
 )
 \@indexfile=\write3
 \openout3 = `ausarbeitung_seminar_dice.idx'.
@@ -638,13 +640,10 @@ Writing index file ausarbeitung_seminar_dice.idx
 
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count329
-\l__pdf_internal_box=\box112
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count320
+\l__pdf_internal_box=\box111
 ) (ausarbeitung_seminar_dice.aux
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 10.
-
 (chapters/Eigenstaendigkeitserklaerung.aux))
 \openout1 = `ausarbeitung_seminar_dice.aux'.
 
@@ -706,19 +705,19 @@ Man spricht deutsch.
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
-\scratchdimen=\dimen277
-\scratchbox=\box113
-\nofMPsegments=\count331
-\nofMParguments=\count332
+\scratchcounter=\count321
+\scratchdimen=\dimen276
+\scratchbox=\box112
+\nofMPsegments=\count322
+\nofMParguments=\count323
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count333
-\MPscratchDim=\dimen278
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen277
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks31
 )
-\c@lstlisting=\count336
+\c@lstlisting=\count327
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -746,8 +745,6 @@ Underfull \hbox (badness 1472) in paragraph at lines 88--88
 er-nens
  []
 
-
-
 [1
 
 {C:/Users/fabia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/log
@@ -762,7 +759,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-
 [2
 
 
@@ -772,16 +768,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `ausarbeitung_seminar_dice.toc'.
 
-
-
-[3
+ [3
 
 
 ] (chapters/EinleitungProblemstellung.tex
 Kapitel 1.
 ) (chapters/Grundlagen.tex
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -794,24 +786,16 @@ l.1 \chapter
 
 ]
 Kapitel 2.
-
-
 [2
 
 
-]) (chapters/Methodik.tex
-
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 1.
-[3]
+]) (chapters/Methodik.tex [3]
 Kapitel 3.
 
 Overfull \hbox (18.9904pt too wide) in paragraph at lines 7--10
 \OT1/cmr/m/n/12 schei-den. Ei-ne ho-he Vielf[]altigkeit zeigt dem An-wen-der ni
 cht nur meh-re-re M[]oglichkeiten
  []
-
-
 
 [4
 
@@ -827,18 +811,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--55
 
  []
 
-
-
-[5]) (chapters/BewertungDerErklärungen.tex
-
-[6]
+[5]) (chapters/BewertungDerErklärungen.tex [6]
 Kapitel 4.
-) (chapters/PraktischeAnwendung.tex
-
 [7
 
 
-]
+]) (chapters/PraktischeAnwendung.tex [8]
 Kapitel 5.
 
 Overfull \hbox (10.189pt too wide) in paragraph at lines 20--20
@@ -846,39 +824,27 @@ Overfull \hbox (10.189pt too wide) in paragraph at lines 20--20
 notebooks/DiCE[]getting[]started.ipynb,
  []
 
-
-
-[8
+[9
 
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 45.
-
-
-[9]
+ [10]
 Underfull \hbox (badness 2165) in paragraph at lines 95--95
 []\OT1/cmr/m/n/12 Listing 5.5: |Ge-ne-rie-rung von vier Coun-ter-fac-tuals und 
 Vi-sua-li-sie-rung der
  []
 
-
-
-[10]
-
-[11]
+[11] [12]
 Underfull \hbox (badness 2165) in paragraph at lines 143--143
 []\OT1/cmr/m/n/12 Listing 5.6: |Ge-ne-rie-rung von vier Coun-ter-fac-tuals und 
 Vi-sua-li-sie-rung der
  []
 
-) (chapters/ZusammenfassungAusblick.tex
-
-[12]
+) (chapters/ZusammenfassungAusblick.tex [13]
 Kapitel 6.
-)
-
-[13
+) [14
 
 
 ] (ausarbeitung_seminar_dice.bbl
@@ -889,9 +855,7 @@ c/12 Siham Ta-bik\OT1/cmr/m/n/12 , \OT1/cmr/m/sc/12 Sal-va-dor
 
 )
 No file ausarbeitung_seminar_dice.ind.
-
-
-[14
+[15
 
 
 
@@ -924,9 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-
-
-[15
+[16
 
 
 
@@ -1005,33 +967,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-)
-
-[16] (ausarbeitung_seminar_dice.aux (chapters/Eigenstaendigkeitserklaerung.aux)
-)
+) [17] (ausarbeitung_seminar_dice.aux
+(chapters/Eigenstaendigkeitserklaerung.aux))
  ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
  ***********
-
-
-Package rerunfilecheck Warning: File `ausarbeitung_seminar_dice.out' has change
-d.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ausarbeitung_seminar_dice.out':
-(rerunfilecheck)             Before: BF3E850395FD096273A9F9458A90A890;3144
-(rerunfilecheck)             After:  1E49BB240DBEECF60268E67F14CD166D;3126.
+Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 1E49BB240DBEECF60268E67F14CD166D;3126.
  ) 
 Here is how much of TeX's memory you used:
- 16945 strings out of 473523
- 272408 string characters out of 5714630
- 736656 words of memory out of 5000000
- 39793 multiletter control sequences out of 15000+600000
- 569165 words of font info for 75 fonts, out of 8000000 for 9000
+ 16826 strings out of 474486
+ 270480 string characters out of 5743756
+ 1967542 words of memory out of 5000000
+ 38730 multiletter control sequences out of 15000+600000
+ 568397 words of font info for 75 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 63i,11n,67p,1183b,2063s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,12n,67p,1183b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1055,9 +1008,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
 /fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
 C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (19 pages, 728080 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (20 pages, 733105 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
  150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
