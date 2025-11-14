@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  14 NOV 2025 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  14 NOV 2025 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,11 +978,11 @@ ed.
 (rerunfilecheck)             Checksum: 85D81C8F482F0B828D0E9F8C6FCDAC0D;3739.
  ) 
 Here is how much of TeX's memory you used:
- 16838 strings out of 474486
- 270641 string characters out of 5743756
+ 16834 strings out of 474486
+ 270603 string characters out of 5743756
  1959542 words of memory out of 5000000
- 38735 multiletter control sequences out of 15000+600000
- 569098 words of font info for 77 fonts, out of 8000000 for 9000
+ 38733 multiletter control sequences out of 15000+600000
+ 568397 words of font info for 75 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  63i,12n,67p,1183b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -1008,7 +1008,7 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
 /fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
 C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
 s/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (22 pages, 742266 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (22 pages, 742276 bytes).
 PDF statistics:
  449 PDF objects out of 1000 (max. 8388607)
  113 named destinations out of 1000 (max. 500000)
