@@ -5,22 +5,17 @@ In diesem Kapitel werden quantitative Evaluationsmetriken für Gültigkeit, Prox
 Anschließend ... %todo
 
 \section{Evaluationsmetriken}
-%- macht dice auch das was es soll (löst es das problem)
-%- wie gut ist es?
-%- wie lauten die Metriken welche zur auswertung verwendet wurden?
-%- sind die metriken sinnvoll und gut?
-
 %- Validity
-Die Gültigkeitsmetrik in Gleichung \ref{validity} beschreibt, den Anteil $\%ValidCFs$ an eindeutigen Counterfactuals aus der Menge $C$ aller generierten Erklärungen, wobei $k$ die Anzahl an geforderten CFs ist. Gültigkeit ist ein wichtiges Maß, da DiCE nicht auf die Einzigartigkeit der Erklärungen prüft.\cite{mothilal2020dice}
+Die Gültigkeitsmetrik in Gleichung \ref{validity} beschreibt den Anteil $\%ValidCFs$ an eindeutigen Counterfactuals aus der Menge $C$ aller generierten Erklärungen, wobei $k$ die Anzahl an geforderten CFs ist. Gültigkeit ist ein wichtiges Maß, da DiCE nicht auf die Einzigartigkeit der Erklärungen prüft.\cite{mothilal2020dice}
 \begin{equation}\label{validity}
-	\%ValidCFs = \frac{|\{unique~instance~ in~C~s.t. f(c)>0.5\}|}{k}
+	\%ValidCFs = \frac{|\{\text{unique instance in } C \textit{s.t. } f(c)>0.5\}|}{k}
 \end{equation}
 
 %- Proximity
 Die Proximitätsmetrik bewertet, wie nah die Counterfactuals $c_i$ an der ursprünglichen Eingabe $x$ im Feature-Raum sind. Die kontinuierlichen und kategorialen Features werden getrennt evaluiert.
 In Gleichung \ref{proximity_contc} werden zunächst die Distanzen $dist\_cont$ der kontinuierlichen Features der einzelnen Counterfactuals im Bezug auf die ursprüngliche Eingabe berechnet. Anschließend wird der Mittelwert dieser Distanzen über alle $k$ generierten Counterfactuals gebildet. Abschließend wird der Wert negativ dargestellt, um die Metrik von der Distanz in einen Proximitätswert umzuwandeln, sodass eine kleine Distanz in einer großen Nähe resultiert.\cite{mothilal2020dice}
 \begin{align}\label{proximity_contc}
-	ContinousProximity &:= - \frac{1}{k} \sum_{i=1}^{k}{dist\_cont(c_i,x)} %\\
+	ContinuousProximity &:= - \frac{1}{k} \sum_{i=1}^{k}{dist\_cont(c_i,x)} %\\
 					  % &= - \frac{1}{k} \sum_{i=1}^{k}{\left( \frac{1}{d_{cont}}\sum_{p=1}^{d_{cont}}\frac{|c^{p}-x^{p}|}{MAD_{p}} \right)} 
 \end{align}
 In Gleichung \ref{proximity_cat} wird zunächst die Distanz $dist\_cat$ der kategorialen Features der einzelnen Counterfactuals im Bezug auf die ursprüngliche Eingabe berechnet, welche zählt, wie viele kategoriale Features sich geändert haben. Anschließend wird der Mittelwert der Distanzen über alle $k$ generierten Counterfactuals gebildet. Um den Anteil der kategorialen Features zu repräsentieren, welche nicht geändert wurden, wird in einem letzten Schritt die Distanz von Eins subtrahiert. Eine hohe kategoriale Proximität resultiert somit in einem Wert nahe Eins, da nur wenige kategorialen Features geändert wurden.\cite{mothilal2020dice}
@@ -30,28 +25,31 @@ In Gleichung \ref{proximity_cat} wird zunächst die Distanz $dist\_cat$ der kate
 \end{align}
 
 %- Sparsity
-Sparsität ist eine Metrik, um die Machbarkeit der generierten Erklärungen zu bewerten. Dieser Wert ist für kategoriale Features identisch mit der Proximität. Einfachheitshalber werden kontinuierliche und kategoriale Merkmale in der Sparsität zu einer einzigen Metrik in Gleichung \ref{sparsity_metric} zusammengefasst. Für jedes Counterfactuals $c_i$ wird die Anzahl an veränderten Features im Vergleich zur ursprünglichen Eingabe $x$ gezählt. Jedes der $k$ Counterfactual besitzt $d$ Merkmale. Anschließend wird der Mittelwert über alle Counterfactuals und Features berechnet und von Eins subtrahiert. Ein hoher Sparsitätswert nahe Eins bedeutet, dass nur wenige Features in den Erklärungen verändert wurden und ist für eine Umsetzbarkeit der Erklärungen anzustreben.\cite{mothilal2020dice}
+Sparsität ist eine Metrik, um die Machbarkeit der generierten Erklärungen zu bewerten. Dieser Wert ist für kategoriale Features identisch mit der Proximität. Einfachheitshalber werden kontinuierliche und kategoriale Merkmale in der Sparsität zu einer einzigen Metrik in Gleichung \ref{sparsity_metric} zusammengefasst. Für jedes Counterfactual $c_i$ wird die Anzahl an veränderten Features im Vergleich zur ursprünglichen Eingabe $x$ gezählt. Jedes der $k$ Counterfactuals besitzt $d$ Merkmale. Anschließend wird der Mittelwert über alle Counterfactuals und Features berechnet und von Eins subtrahiert. Ein hoher Sparsitätswert nahe Eins bedeutet, dass nur wenige Features in den Erklärungen verändert wurden und ist für eine Umsetzbarkeit der Erklärungen anzustreben.\cite{mothilal2020dice}
 \begin{equation}\label{sparsity_metric}
 	Sparsity := 1- \frac{1}{kd} \sum_{i=1}^{k} \sum_{l=1}^{d}{1_{[c_i^l \ne x_i^l]}}
 \end{equation}
 
 %- Diversity
-
+Die Diversitätsmetrik wird analog zur Proximität definiert und in kontinuierliche und kategoriale Diversität aufgeteilt, wie in den Gleichungen \ref{diversity_cont_metric} und \ref{diversity_cat_metric} dargestellt ist. Der Unterschied liegt darin, dass nun die Distanz der Features zwischen zwei Counterfactuals $c_i$ und $c_j$ gemessen wird. Die Anzahl aller möglichen CF-Paare ist $C_k^2$. Im Anschluss an die Berechnung der kategorialen und kontinuierlichen Distanz wird jeweils der Mittelwert über die Distanzen gebildet. Ein hoher Wert bedeutet, dass eine große Diversität zwischen den einzelnen Erklärungen vorliegt. Dies resultiert in größeren Unterschieden zwischen den Counterfactuals, womit eine höhere Machbarkeit einhergeht.
 \cite{mothilal2020dice}
-\begin{equation}\label{diversity_metric}
-	Diversity := \Delta = \frac{1}{C_k^2} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k}{dist(c_i,c_j)}
+\begin{equation}\label{diversity_cont_metric}
+	ContinuousDiversity := \Delta = \frac{1}{C_k^2} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k}{dist\_cont(c_i,c_j)}
+\end{equation}
+\begin{equation}\label{diversity_cat_metric}
+	CategoricalDiversity := \Delta = \frac{1}{C_k^2} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k}{dist\_cat(c_i,c_j)}
 \end{equation}
 
 %- Count-Diversity
-
+Analog zu der Sparsität kann eine weitere Diversitätsmetrik (Gleichung \ref{count-diversity}) formuliert werden, welche den Durchschnitt aller unterschiedlichen Features beim paarweisen Vergleich der Counterfactuals angibt.
 \cite{mothilal2020dice}
 \begin{equation}\label{count-diversity}
-	Count-Diversity := \Delta = \frac{1}{C_k^2d} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k} \sum_{l=1}^{d}{1_{[c_i^l \ne c_j^l]}}
+	CountDiversity := \Delta = \frac{1}{C_k^2d} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k} \sum_{l=1}^{d}{1_{[c_i^l \ne c_j^l]}}
 \end{equation}
 
 
 \section{Bewertung der Erklärungsqualität}
-- Wie aussagekräftig sind die quantitativen Metriken?
+- Wie aussagekräftig / gut sind die quantitativen Metriken?
 - Wie sieht es mit qualitativen Metriken aus?
 - Wie gut im Vergleich zu anderen Erkkärungsansätzen?
 
