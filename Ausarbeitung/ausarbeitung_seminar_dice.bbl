@@ -27,4 +27,21 @@
 \newblock \Btxinlong{}\ {\em Proceedings of the 2020 Conference on Fairness,
   Accountability, and Transparency}, \btxpageslong{}\ 607--617, 2020.
 
+\bibitem[RSG16]{Ribeiro.2016}
+{\sc Ribeiro, Marco~Tulio}, {\sc Sameer Singh} \btxandlong{}\ {\sc Carlos
+  Guestrin}: {\em {\textquotedbl}Why Should I Trust You?{\textquotedbl}}.
+\newblock \Btxinlong{}\ {\em Proceedings of the 22nd ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}, \btxpageslong{}\
+  1135--1144, New York, NY, USA, 2016. ACM.
+
+\bibitem[Rus19]{Russell.2019}
+{\sc Russell, Chris}: {\em Efficient Search for Diverse Coherent Explanations}.
+\newblock \Btxinlong{}\ {\em Proceedings of the Conference on Fairness,
+  Accountability, and Transparency}, \btxpageslong{}\ 20--28, New York, NY,
+  USA, 2019. ACM.
+
+\bibitem[Wat19]{Watcher.2019}
+{\em Proceedings of the Conference on Fairness, Accountability, and
+  Transparency}, New York, NY, USA, 2019. ACM.
+
 \end{thebibliography}

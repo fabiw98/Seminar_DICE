@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  14 NOV 2025 18:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  19 DEC 2025 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -638,33 +638,393 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 
 Writing index file ausarbeitung_seminar_dice.idx
 
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen276
+\pgfutil@tempdimb=\dimen277
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box111
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen278
+\pgf@y=\dimen279
+\pgf@xa=\dimen280
+\pgf@ya=\dimen281
+\pgf@xb=\dimen282
+\pgf@yb=\dimen283
+\pgf@xc=\dimen284
+\pgf@yc=\dimen285
+\pgf@xd=\dimen286
+\pgf@yd=\dimen287
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count320
+\c@pgf@countb=\count321
+\c@pgf@countc=\count322
+\c@pgf@countd=\count323
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count324
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count325
+\pgfsyssoftpath@bigbuffer@items=\count326
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen288
+\pgfmath@count=\count327
+\pgfmath@box=\box112
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count328
+))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen289
+\pgf@picmaxx=\dimen290
+\pgf@picminy=\dimen291
+\pgf@picmaxy=\dimen292
+\pgf@pathminx=\dimen293
+\pgf@pathmaxx=\dimen294
+\pgf@pathminy=\dimen295
+\pgf@pathmaxy=\dimen296
+\pgf@xx=\dimen297
+\pgf@xy=\dimen298
+\pgf@yx=\dimen299
+\pgf@yy=\dimen300
+\pgf@zx=\dimen301
+\pgf@zy=\dimen302
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen303
+\pgf@path@lasty=\dimen304
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen305
+\pgf@shorten@start@additional=\dimen306
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box113
+\pgf@hbox=\box114
+\pgf@layerbox@main=\box115
+\pgf@picture@serial@count=\count329
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen307
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen308
+\pgf@pt@y=\dimen309
+\pgf@pt@temp=\dimen310
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen311
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen312
+\pgf@sys@shading@range@num=\count330
+\pgf@shadingcount=\count331
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box116
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box117
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen313
+\pgf@nodesepend=\dimen314
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen315
+\pgffor@skip=\dimen316
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count332
+\pgfplotmarksize=\dimen317
+)
+\tikz@lastx=\dimen318
+\tikz@lasty=\dimen319
+\tikz@lastxsaved=\dimen320
+\tikz@lastysaved=\dimen321
+\tikz@lastmovetox=\dimen322
+\tikz@lastmovetoy=\dimen323
+\tikzleveldistance=\dimen324
+\tikzsiblingdistance=\dimen325
+\tikz@figbox=\box118
+\tikz@figbox@bg=\box119
+\tikz@tempbox=\box120
+\tikz@tempbox@bg=\box121
+\tikztreelevel=\count333
+\tikznumberofchildren=\count334
+\tikznumberofcurrentchild=\count335
+\tikz@fig@count=\count336
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count337
+\pgfmatrixcurrentcolumn=\count338
+\pgf@matrix@numberofcolumns=\count339
+)
+\tikz@expandcount=\count340
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen326
+\pgfarrowlength=\dimen327
+\pgfarrowwidth=\dimen328
+\pgfarrowlinewidth=\dimen329
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box122
+)
+(C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count320
-\l__pdf_internal_box=\box111
+\l__color_backend_stack_int=\count341
+\l__pdf_internal_box=\box123
 ) (ausarbeitung_seminar_dice.aux
 (chapters/Eigenstaendigkeitserklaerung.aux))
 \openout1 = `ausarbeitung_seminar_dice.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -705,26 +1065,26 @@ Man spricht deutsch.
 (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen276
-\scratchbox=\box112
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen277
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count342
+\scratchdimen=\dimen330
+\scratchbox=\box124
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count345
+\MPscratchDim=\dimen331
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks43
 )
-\c@lstlisting=\count327
+\c@lstlisting=\count348
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 75.
  (ausarbeitung_seminar_dice.out) (ausarbeitung_seminar_dice.out)
-\@outlinefile=\write4
-\openout4 = `ausarbeitung_seminar_dice.out'.
+\@outlinefile=\write5
+\openout5 = `ausarbeitung_seminar_dice.out'.
 
 
 
@@ -734,17 +1094,11 @@ bibgerm.sty: babel.sty detected
 
 pdfTeX warning: pdflatex.exe (file ./images/logo-fb-informatik.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/logo-fb-informatik.pdf, id=83, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=134, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
-Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 88.
+Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 95.
 (pdftex.def)             Requested size: 209.12683pt x 40.47253pt.
-
-Underfull \hbox (badness 1472) in paragraph at lines 88--88
-[]\OT1/cmr/m/n/17.28 Erkl[]arung von Klas-si-fi-ka-to-ren des ma-schi-nel-len L
-er-nens
- []
-
 [1
 
 {C:/Users/fabia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/log
@@ -765,8 +1119,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ] (ausarbeitung_seminar_dice.toc)
-\tf@toc=\write5
-\openout5 = `ausarbeitung_seminar_dice.toc'.
+\tf@toc=\write6
+\openout6 = `ausarbeitung_seminar_dice.toc'.
 
  [3
 
@@ -791,71 +1145,58 @@ Kapitel 2.
 
 ]) (chapters/Methodik.tex [3]
 Kapitel 3.
-
-Overfull \hbox (18.9904pt too wide) in paragraph at lines 7--10
-\OT1/cmr/m/n/12 schei-den. Ei-ne ho-he Vielf[]altigkeit zeigt dem An-wen-der ni
-cht nur meh-re-re M[]oglichkeiten
- []
-
 [4
 
 
-]
-Overfull \hbox (23.48793pt too wide) detected at line 36
-[][][]\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
-[] [] [] + [] \OMS/cmsy/m/n/12 ^^@ []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 148--153
 
  []
 
-[5]) (chapters/BewertungDerErklÃ¤rungen.tex [6]
+[6]) (chapters/BewertungDerErklÃ¤rungen.tex [7]
 Kapitel 4.
-[7
+[8
 
 
-] [8]) (chapters/PraktischeAnwendung.tex [9] [10]
+] [9]
+<images/decision_boundry.png, id=300, 824.32968pt x 496.85625pt>
+File: images/decision_boundry.png Graphic file (type png)
+<use images/decision_boundry.png>
+Package pdftex.def Info: images/decision_boundry.png  used on input line 72.
+(pdftex.def)             Requested size: 334.60422pt x 201.68056pt.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+3.
+ (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [10] [11 <./images/decision_boundry.png>]) (chapters/PraktischeAnwendung.tex
+[12]
 Kapitel 5.
 
-Overfull \hbox (10.189pt too wide) in paragraph at lines 20--20
-[][][]\OT1/cmr/m/n/9 https://github.com/interpretml/DiCE/blob/main/docs/source/
-notebooks/DiCE[]getting[]started.ipynb,
+Overfull \hbox (17.81653pt too wide) in paragraph at lines 20--20
+[][][]\T1/cmr/m/n/9 https://github.com/interpretml/DiCE/blob/main/docs/source/n
+otebooks/DiCE_getting_started.ipynb,
  []
 
-[11
+[13
 
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 45.
- [12] [13]
-Underfull \hbox (badness 2165) in paragraph at lines 95--95
-[]\OT1/cmr/m/n/12 Listing 5.5: |Ge-ne-rie-rung von vier Coun-ter-fac-tuals und 
-Vi-sua-li-sie-rung der
- []
-
-[14]
-Underfull \hbox (badness 2165) in paragraph at lines 143--143
-[]\OT1/cmr/m/n/12 Listing 5.6: |Ge-ne-rie-rung von vier Coun-ter-fac-tuals und 
-Vi-sua-li-sie-rung der
- []
-
-) (chapters/ZusammenfassungAusblick.tex [15]
+ [14] [15] [16]) (chapters/ZusammenfassungAusblick.tex [17]
 Kapitel 6.
-) [16
+) [18
 
 
 ] (ausarbeitung_seminar_dice.bbl
-Underfull \hbox (badness 2088) in paragraph at lines 5--11
-[]\OT1/cmr/m/sc/12 Barredo Ar-rie-ta, Ale-jan-dro\OT1/cmr/m/n/12 , \OT1/cmr/m/s
-c/12 Siham Ta-bik\OT1/cmr/m/n/12 , \OT1/cmr/m/sc/12 Sal-va-dor
+Underfull \hbox (badness 1052) in paragraph at lines 44--46
+[]\T1/cmr/m/it/12 Proceedings of the Con-fe-rence on Fair-ness, Ac-coun-ta-bi-l
+i-ty, and
  []
 
 )
 No file ausarbeitung_seminar_dice.ind.
-[17
+[19
 
 
 
@@ -888,86 +1229,166 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[18
+[20
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\OT1/cmr/bx/n/9 Mit wel-cher
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/bx/n/9 Mit wel-cher
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/bx/n/9 Ein-ga-be-fra-
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/bx/n/9 Ein-ga-be-fra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/bx/n/9 ge bzw. -
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/bx/n/9 ge bzw. -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\OT1/cmr/bx/n/9 An wel-
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/bx/n/9 An wel-cher
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/bx/n/9 cher Stel-le
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/bx/n/9 Stel-le der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/bx/n/9 der Ar-beit
+Underfull \hbox (badness 6445) in paragraph at lines 122--122
+\T1/cmr/bx/n/9 Ar-beit über-
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 120--120
-[]|\OT1/cmr/m/n/9 ChatGPT, De-
+Underfull \hbox (badness 6078) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 ChatGPT, De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\OT1/cmr/m/n/9 Korrektur
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 Korrektur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/m/n/9 bzgl. Recht-
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 bzgl. Recht-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/m/n/9 schrei-bung,
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 schrei-bung,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\OT1/cmr/m/n/9 Verbesserung
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 Verbesserung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\OT1/cmr/m/n/9 Textabschnitte
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 Textabschnitte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/m/n/9 mit der Auf-
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 mit der Auf-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\OT1/cmr/m/n/9 for-de-rung zur
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 for-de-rung zur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 Erstellung der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 Schnelle und
+ []
+
+
+Underfull \hbox (badness 7981) in paragraph at lines 122--122
+\T1/cmr/m/n/9 ein-fa-che Mo-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 fi-ka-ti-on durch
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 122--122
+[]|\T1/cmr/m/n/9 Für die Ab-bil-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 in La-tex mit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 dem In-halt:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 in-put [200\TS1/cmr/m/n/9 ¿\T1/cmr/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 Männ-lich, Ar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 beits-los] ->
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 Black-Box ->
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 Bei-spiel zur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 Er-läu-te-rung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 der Da-ten-ver-
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 122--122
+\T1/cmr/m/n/9 ar-bei-tung ei-nes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\T1/cmr/m/n/9 Black-Box-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
-) [19] (ausarbeitung_seminar_dice.aux
+) [21] (ausarbeitung_seminar_dice.aux
 (chapters/Eigenstaendigkeitserklaerung.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -975,42 +1396,53 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 85D81C8F482F0B828D0E9F8C6FCDAC0D;3739.
+(rerunfilecheck)             Checksum: 319F5832BC9B4839A9D975D76EDC6DB6;4907.
  ) 
 Here is how much of TeX's memory you used:
- 16834 strings out of 474486
- 270603 string characters out of 5743756
+ 28651 strings out of 474486
+ 530440 string characters out of 5743756
  1959542 words of memory out of 5000000
- 38733 multiletter control sequences out of 15000+600000
- 568397 words of font info for 75 fonts, out of 8000000 for 9000
+ 50278 multiletter control sequences out of 15000+600000
+ 577182 words of font info for 85 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 63i,12n,67p,1183b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,26n,93p,1183b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/fabia/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/fabia/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/fabia/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
-fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/fabia/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/fabia/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
-/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
-C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (22 pages, 742276 bytes).
+0900.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\eccc1200.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt0800.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\fabia\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\fabia\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\fabia\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\fabia\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\
+fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\
+Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1
+200.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecbx1728.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecrm1440.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecrm1728.pk><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/fabia/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/fabia/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/fabia
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr9.pfb><C:/Users/fabia/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/fabia/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ausarbeitung_seminar_dice.pdf (24 pages, 918776 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1270 PDF objects out of 1440 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 327 words of extra memory for PDF output out of 10000 (max. 10000000)
 

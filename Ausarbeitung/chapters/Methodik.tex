@@ -1,11 +1,104 @@
 \chapter{Methodisches Vorgehen}
-In diesem Kapitel werden die zentralen Konzepte von DiCE betrachtet, welche zur Generierung der Counterfactuals benötigt werden. Darunter fallen Proximität, Diversität und Sparsität. Abschließend wird die Verlustfunktion als Möglichkeit der Optimierung von Counterfactuals untersucht.
+%In diesem Kapitel werden die zentralen Konzepte von DiCE betrachtet, welche zur Generierung der Counterfactuals benötigt werden. Darunter fallen Proximität, Diversität und Sparsität. Abschließend wird die Verlustfunktion als Möglichkeit der Optimierung von Counterfactuals untersucht.
 
 
-\section{Zentrale Konzepte}
+
+Nachdem die theoretischen Grundlagen definiert wurden, befasst sich dieses Kapitel mit dem methodischen Vorgehen von DiCE. 
+
+Die Kernidee lässt sich am besten als ein Suchprozess beschreiben: Ausgehend von einer ursprünglichen Eingabe, die zu einem unerwünschten Ergebnis geführt hat, sucht das Verfahren nach einer optimalen Menge von Alternativszenarien. Anstatt dem Anwender lediglich zu sagen, dass er abgelehnt wurde, generiert DiCE eine Erklärung, was hätte anders sein müssen, um das gewünschte Resultat zu erhalten.
+
+%Beispiel
+Ein anschauliches Beispiel hierfür ist die Ablehnung eines Kreditantrags durch ein ML-Modell. DiCE kann hier aufzeigen, dass der Kredit bewilligt worden wäre, wenn beispielsweise das Einkommen um 100\euro{} höher oder die Kreditsumme um 5000\euro{} niedriger ausgefallen wäre.
+
+Der methodische Ablauf von DiCE lässt sich in drei Phasen unterteilen:
+\begin{enumerate}
+	\item \textbf{Initialisierung:} Zufällige Initialisierung der Counterfactuals.
+	\item \textbf{Optimierung:} Optimierung der Counterfactuals durch iterative Minimierung der Verlustfunktion.
+	\item \textbf{Nachbearbeitung:} Anpassung der Ergebnisse zur Steigerung der Sparsität.
+\end{enumerate}
+
+In den folgenden Abschnitten werden zunächst die zentralen Konzepte erläutert, bevor die mathematische Formulierung der Verlustfunktion zur Optimierung der Counterfactuals untersucht wird.
+\begin{figure}[htbp]
+	\centering
+	\resizebox{\textwidth}{!}{
+	\begin{tikzpicture}[
+		node distance=1.5cm,
+		auto,
+		databox/.style={
+			rectangle, 
+			draw=blue!50!black!80, 
+			fill=blue!5!white,
+			thick, 
+			rounded corners, 
+			text width=4.2cm, % Etwas breiter für die längeren Begriffe
+			align=center, 
+			minimum height=6em, % Höher für vier Zeilen Text
+			font=\small
+		},
+		blackbox/.style={
+			rectangle, 
+			draw=black!80, 
+			fill=gray!20,
+			thick, 
+			text width=4cm, 
+			align=center, 
+			minimum height=6em,
+			font=\bfseries\small,
+			drop shadow
+		},
+		myarrow/.style={
+			->, 
+			>={Latex[width=3mm,length=3mm]}, 
+			thick,
+			draw=gray!80
+		}
+		]
+		
+		% --- Knoten ---
+		
+		% 1. Eingabe-Block mit deinen präzisen Begriffen
+		\node[databox] (input) {
+			\textbf{Eingangswerte} \\
+			\vspace{0.1cm}
+			\footnotesize
+			Feature-Vektor \\
+			ML-Modell \\
+			Ursprüngliche Klasse \\
+			Gewünschte Klasse
+		};
+		
+		% 2. Der Optimierungsprozess
+		\node[blackbox, right=of input] (dice) {
+			Optimierungsverfahren \\ 
+			\textnormal{\footnotesize (Minimierung der Verlustfunktion)}
+		};
+		
+		% 3. Ergebnis-Block
+		\node[databox, right=of dice] (output) {
+			\textbf{Ergebnis} \\
+			\vspace{0.1cm}
+			Menge von $k$ \\ Counterfactuals
+		};
+		
+		% 4. Die Konzepte (Überschrift angepasst an deinen Text)
+		\node [above=1cm of dice, text width=6cm, align=center, font=\small] (concepts) 
+		{\textbf{Zentrale Konzepte:}\\ \textit{Proximität, Diversität, Sparsität}};
+		
+		% --- Pfeile ---
+		\draw[myarrow] (input) -- (dice);
+		\draw[myarrow] (dice) -- (output);
+		\draw[myarrow] (concepts) -- (dice);
+		
+	\end{tikzpicture}
+	}
+	\caption{Methodischer Überblick der Counterfactual-Generierung: Basierend auf der ursprünglichen Eingabe und dem Modell sucht DiCE nach neuen Beispielen, welche die zentralen Konzepte bestmöglich erfüllen.}
+	\label{fig:dice-methodik-overview}
+\end{figure}
+
+\section{Zentrale Konzepte}\label{chap-concepts}
 %- Diversity via dpp
-\textbf{Diversität} beschreibt, wie sich generierten Counterfactuals voneinander unterscheiden.
-Eine hohe Vielfältigkeit zeigt dem Anwender nicht nur mehrere Möglichkeiten zum Erreichen einer anderen Klassifikation auf, wodurch sich die Machbarkeit erhöht, sondern lässt auch größere Rückschlüsse auf das Entscheidungsverhalten des ML-Modells schließen. 
+\textbf{Diversität} beschreibt, wie sich die generierten Counterfactuals voneinander unterscheiden.
+Eine hohe Vielfältigkeit zeigt dem Anwender nicht nur mehrere Möglich-keiten zum Erreichen einer anderen Klassifikation auf, wodurch sich die Machbarkeit erhöht, sondern lässt auch größere Rückschlüsse auf das Entscheidungsverhalten des ML-Modells zu. Machbarkeit bedeutet im Kontext von DiCE, ob eine Möglichkeit für einen spezifischen Anwender theoretisch realisierbar ist. Zum Beispiel kann ein Mensch seine ethnische Herkunft nicht ändern, jedoch ist das Erlernen einer neuen Sprache möglich.
 Um Diversität zu berücksichtigen, wird in DiCE das Konzept der \textbf{D}eterminantal \textbf{P}oint \textbf{P}rocesses (DPP)  verwendet, um das \textit{Subset Selection Problem} zu lösen. Das Problem beschreibt dabei die Auswahl von wenigen CFs aus einer unendlich großen Menge an möglichen Beispielen, welche zeitgleich gültig als auch divers sind. In Gleichung \ref{dpp_diversity} beschreibt $dist(c_i,c_j)$ die Distanz zwischen zwei Counterfactuals. Somit führt eine kleine Ähnlichkeit $K_{i,j}$ der CFs zu einer großen Determinante $det(K)$ und Maximierung der Diversität.\cite{mothilal2020dice, kulesza2012determinantal}
 \begin{equation}\label{dpp_diversity}
 	dpp\_diversity = det(K), \text{  mit }K_{i,j} = \frac{1}{1+dist(c_i,c_j)}
@@ -31,9 +124,14 @@ Weiterhin ist zu beachten, dass zwar ein Counterfactual ähnlich zu dem ursprün
 \section{Optimierung der Counterfactuals}
 
 DiCE hat das Ziel eine Menge an $k$ Counterfactuals für einen Eingabevektor $x$ zu finden. Um die optimale Menge $C(x)$ zu ermitteln, wird die \textbf{Verlustfunktion} in Gleichung \ref{loss-function} verwendet und nach den Argumenten gesucht, welche die Gesamtfunktion minimieren. Die Optimierung wird über ein Gradientenabstiegsverfahren realisiert, wobei die $k$ Counterfactuals zufällig initialisiert werden.\cite{mothilal2020dice}
+
 \begin{equation}\label{loss-function}
-	C(x) = \arg \min_{c_{1}, \dots, c_{k}} \underbrace{\frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)}}_{\text{Term 1: Gültigkeit}} + \underbrace{\frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)}}_{\text{Term 2: Proximität}} - \underbrace{\lambda_2 \cdot dpp\_diversity(c_1,...,c_k)}_{\text{Term 3: Diversität}}
+	\begin{split}
+		C(x) &= \arg \min_{c_{1}, \dots, c_{k}} \underbrace{\frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)}}_{\text{Term 1: Gültigkeit}} + \underbrace{\frac{\lambda_1}{k} \sum_{i=1}^{k}{dist(c_i,x)}}_{\text{Term 2: Proximität}}\\
+		&\phantom{{}= \arg \min_{c_{1}, \dots, c_{k}} \underbrace{\frac{1}{k} \sum_{i=1}^{k}{yloss(f(c_i),y)}}_{\text{Term 1: Gültigkeit}}} - \underbrace{\lambda_2 \cdot dpp\_diversity(c_1,...,c_k)}_{\text{Term 3: Diversität}}
+	\end{split}
 \end{equation}
+
 % Gültigkeit
 Der erste Term beschreibt den mittleren Gültigkeitsfehler, wobei $yloss(.,.)$ die Distanz zwischen der Vorhersage $f(c_i)$ des ML-Modells für das Counterfactual $c_i$ und dem gewünschten Ergebnis $y$ misst. Die Minimierung dieses Terms führt dazu, dass die generierten Counterfactuals auch valide sind und in der gewünschten Klasse liegen.
 % yloss

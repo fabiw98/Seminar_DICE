@@ -2,31 +2,192 @@
 
 In diesem Kapitel werden zunächst wichtige Begriffe aus dem Bereich der erklärbaren KI vorgestellt und in dem Kontext von DiCE erläutert.
 
+
 \section{Grundlegende Begriffe}
-% ML-Modell
-Ein \textbf{Modell des maschinellen Lernens} (ML-Modell) ist ein algorithmisches System, das mit Trainingsdaten zur Erkennung von Mustern durch überwachtes, unüberwachtes, halbüberwachtes oder bestärkendes Lernen trainiert wurde. Anschließend kann das Modell unbekannte Eingabedaten auf Basis des gelernten Wissens verarbeiten und klassifizieren.
 
-% Input: Feature Vector
-Die Eingabe erfolgt in Form eines sogenannten \textbf{Feature-Vektors}, wobei die Dimension gleich der Anzahl an kategorischen und numerischen Merkmalen ist.
-% Output: Klasse
-Das Ergebnis erfolgt über die Angabe einer \textbf{Klasse}, zu der eine Eingabe durch das ML-Modell zugeordnet wurde.
-% Original Input / Output? Eigentlich selbsterklärend
-Die \textbf{ursprüngliche Eingabe} bezeichnet den unveränderten Feature Vector, welcher in einer \textbf{unerwünschten Klasse} resultiert. 
-% CF / CF Klasse
-Eine \textbf{kontrafaktische Erklärung}, auch \textbf{Counterfactual} (CF) genannt, ist ein verändertes Gegenbeispiel der Eingabe, welches so gewählt wird, dass nicht die ursprünglich erhaltene, unerwünschte Klasse das Ergebnis ist, sondern eine andere Klasse. Diese erwünschte Klasse wird als \textbf{CF Klasse} bezeichnet.\cite{mothilal2020dice}
+Das Framework DiCE wird primär im Bereich der überwachten Klassifikation eingesetzt, weshalb der Fokus der folgenden Definitionen auf diesem Teilbereich des maschinellen Lernens liegt.
 
-% Black-Box vs. White-Box-Modelle
-Bei ML-Modellen wird zwischen \textbf{Black-Box-} und \textbf{White-Box-Modellen} unterschieden. 
-Black-Box-Modelle sind schwer erklärbar und für Domänenexperten unverständlich, sodass ein Ergebnis nicht nachvollziehbar für einen Menschen ist. Als White-Box-Modelle werden hingegen ML-Modelle bezeichnet, die erklärbare und nachvollziehbare Resultate liefern.\cite{8882211}
+\subsection{Formaler Rahmen der Klassifikation}
+Im Kontext dieser Arbeit wird ein \textbf{Modell des maschinellen Lernens} als eine Funktion betrachtet, die Eingabedaten einer bestimmten Kategorie zuordnet. Die Eingabe erfolgt in Form eines \textbf{Feature-Vektors}, welcher die numerischen und kategorischen Merkmale eines Objekts zusammenfasst. Das Ergebnis der Verarbeitung ist die Zuordnung zu einer diskreten \textbf{Klasse}, wie in Abbildung \ref{fig:ml-prozess} exemplarisch gezeigt wird. 
+Während ML-Modelle auch für kontinuierliche Vorhersagen genutzt werden können, konzentriert sich die Generierung von Counterfactuals auf die Veränderung der Klassenzugehörigkeit.
+\begin{figure}[htbp]
+	\centering
+	\resizebox{\textwidth}{!}{
+	\begin{tikzpicture}[
+		node distance=1.5cm,
+		auto,
+		databox/.style={
+			rectangle, 
+			draw=blue!50!black!80, 
+			fill=blue!5!white,
+			thick, 
+			rounded corners, 
+			text width=3.8cm, % Etwas breiter für den Vektor
+			align=center, 
+			minimum height=4em, % Höher für vertikalen Vektor
+			font=\small
+		},
+		blackbox/.style={
+			rectangle, 
+			draw=black!80, 
+			fill=gray!20,
+			thick, 
+			text width=3.5cm, 
+			align=center, 
+			minimum height=4em,
+			font=\bfseries\small,
+			drop shadow
+		},
+		myarrow/.style={
+			->, 
+			>={Latex[width=3mm,length=3mm]}, 
+			thick,
+			draw=gray!80
+		}
+		]
+		
+		% --- Knoten ---
+		
+		% Der Input mit vertikalem Spaltenvektor
+		\node[databox] (input) {
+			\textbf{Feature-Vektor}\\
+			\vspace{0.2cm}
+			$\begin{bmatrix}
+				200\,\text{\euro} \\
+				\text{Männlich} \\
+				\text{Arbeitslos}
+			\end{bmatrix}$
+		};
+		
+		\node[blackbox, right=of input] (model) {
+			ML-Modell \\ 
+			(Black-Box)
+		};
+		
+		\node[databox, right=of model] (output) {
+			\textbf{Klasse} \\
+			\vspace{0.2cm}
+			\glqq Kredit abglehnt\grqq
+		};
+		
+		% --- Pfeile ---
+		\draw[myarrow] (input) -- (model);
+		\draw[myarrow] (model) -- (output);
+		
+	\end{tikzpicture}
+	}
+	\caption{Visualisierung der Datenverarbeitung: Eine ursprüngliche Eingabe als Feature-Vektor wird durch das ML-Modell einer Klasse zugeordnet. Das ML-Modell lehnt den Antrag auf einen Kredit von einer männlichen, arbeitslosen Person mit einem Einkommen von 200\euro{} ab.}
+	\label{fig:ml-prozess}
+\end{figure}
 
-% Lokale vs. Globale Erklärungsansätze
-Ein \textbf{globaler} Erklärungsansatz verfolgt das Ziel, das gesamte Entscheidungsverhalten eines ML-Modells zu verstehen. Im Gegensatz dazu verfolgen \textbf{lokale} Ansätze das Ziel ein Modell in einem eingeschränkten, weniger komplexen Lösungsraum zu erklären.\cite{barredo2019explainable}
+
+\subsection{Kontrafaktische Erklärungen}
+Eine \textbf{kontrafaktische Erklärung}, auch Counterfactual (CF) genannt, setzt dort an, wo die ursprüngliche Eingabe zu einer aus Anwendersicht unerwünschten Klasse führt. Ein Counterfactual ist ein modifiziertes Gegenbeispiel zur ursprünglichen Eingabe, welches so gewählt wird, dass das Modell eine \textbf{erwünschte Klasse} (CF-Klasse) ausgibt. 
+Das Ziel ist es, dem Anwender die minimal notwendigen Änderungen aufzuzeigen, um ein gewünschtes Ergebnis zu erzielen.\cite{mothilal2020dice}
+\begin{figure}[htbp]
+	\centering
+	\resizebox{\textwidth}{!}{
+	\begin{tikzpicture}[
+		node distance=1.5cm,
+		auto,
+		databox/.style={
+			rectangle, 
+			draw=blue!50!black!80, 
+			fill=blue!5!white,
+			thick, 
+			rounded corners, 
+			text width=3.8cm, % Etwas breiter für den Vektor
+			align=center, 
+			minimum height=4em, % Höher für vertikalen Vektor
+			font=\small
+		},
+		blackbox/.style={
+			rectangle, 
+			draw=black!80, 
+			fill=gray!20,
+			thick, 
+			text width=3.5cm, 
+			align=center, 
+			minimum height=4em,
+			font=\bfseries\small,
+			drop shadow
+		},
+		myarrow/.style={
+			->, 
+			>={Latex[width=3mm,length=3mm]}, 
+			thick,
+			draw=gray!80
+		}
+		]
+		
+		% --- Knoten ---
+		
+		% Der Input mit vertikalem Spaltenvektor
+		\node[databox] (input) {
+			\textbf{Counterfactual} \\
+			\vspace{0.2cm}
+			$\begin{bmatrix}
+				4000\,\text{\euro} \\
+				\text{Männlich} \\
+				\text{Beamter}
+			\end{bmatrix}$
+		};
+		
+		\node[blackbox, right=of input] (model) {
+			ML-Modell \\ 
+			(Black-Box)
+		};
+		
+		\node[databox, right=of model] (output) {
+			\textbf{CF-Klasse} \\
+			\vspace{0.2cm}
+			\glqq Kredit gewährt\grqq
+		};
+		
+		% --- Pfeile ---
+		\draw[myarrow] (input) -- (model);
+		\draw[myarrow] (model) -- (output);
+		
+	\end{tikzpicture}
+	}
+	\caption{Beispielhafte kontrafaktische Erklärung im Bezug auf Abbildung \ref{fig:ml-prozess}, sodass durch Variation der Eingabe die gewünschte Klasse erreicht wird. Das Counterfacutal zeigt, dass eine Erhöhung des Einkommens und eine Anstellung den gewünschten Kredit durch das Modell ermöglichen würde.}
+	\label{fig:ml-prozess-cf}
+\end{figure}
+
+\subsection{Einordnung von Erklärungsmodellen}
+Die Notwendigkeit für Verfahren wie DiCE ergibt sich aus der Komplexität moderner \textbf{Black-Box}-Modelle. Im Gegensatz zu \textbf{White-Box}-Modellen ist deren interne Logik nicht unmittelbar nachvollziehbar\cite{8882211}. 
+Erklärungsansätze lassen sich in zwei Kategorien, global und lokal, unterteilen. \textbf{Globale} Ansätze versuchen, das Modellverhalten in seiner Gesamtheit zu interpretieren, während \textbf{lokale} Ansätze, zu denen auch die kontrafaktischen Erklärungen zählen, die Entscheidung für einen spezifischen Einzelfall begründen\cite{barredo2019explainable}.
 
 
 \section{Definition von DiCE}
 % DiCE: post-hoc, black-box, lokaler Ansatz
 \textbf{Di}verse \textbf{C}ounterfactual \textbf{E}xplanations (DiCE) ist ein Erklärungsansatz, um Entscheidungen von ML-Modellen für den Menschen verständlich zu machen. Es handelt sich um ein lokales, post-hoc Verfahren für Black-Box-Modelle. Die Erklärung des Modells findet somit nach der Trainingsphase statt und dient lediglich der Bewertung, Nachvollziehbarkeit sowie dem Aufzeigen von Schwächen oder einem Bias in den Ausgaben des Modells.
 DiCE generiert zu einer Eingabe verschiedene Counterfactuals, um dem Anwender aufzuzeigen, welche Parameter sich für eine andere Klassifikation durch das ML-Modell ändern müssen. Die Counterfactuals werden so generiert, dass sie möglichst unterschiedlich sind, dabei jedoch möglichst nahe an der ursprünglichen Eingabe bleiben.\cite{mothilal2020dice}
+
+
+
+%==============================
+%% ML-Modell
+%Ein \textbf{Modell des maschinellen Lernens} (ML-Modell) ist ein algorithmisches System, das mit Trainingsdaten zur Erkennung von Mustern durch überwachtes, unüberwachtes, halbüberwachtes oder bestärkendes Lernen trainiert wurde. Anschließend kann das Modell unbekannte Eingabedaten auf Basis des gelernten Wissens verarbeiten und klassifizieren.
+%
+%% Input: Feature Vector
+%Die Eingabe erfolgt in Form eines sogenannten \textbf{Feature-Vektors}, wobei die Dimension gleich der Anzahl an kategorischen und numerischen Merkmalen ist.
+%% Output: Klasse
+%Das Ergebnis erfolgt über die Angabe einer \textbf{Klasse}, zu der eine Eingabe durch das ML-Modell zugeordnet wurde.
+%% Original Input / Output? Eigentlich selbsterklärend
+%Die \textbf{ursprüngliche Eingabe} bezeichnet den unveränderten Feature Vector, welcher in einer \textbf{unerwünschten Klasse} resultiert. 
+%% CF / CF Klasse
+%Eine \textbf{kontrafaktische Erklärung}, auch \textbf{Counterfactual} (CF) genannt, ist ein verändertes Gegenbeispiel der Eingabe, welches so gewählt wird, dass nicht die ursprünglich erhaltene, unerwünschte Klasse das Ergebnis ist, sondern eine andere Klasse. Diese erwünschte Klasse wird als \textbf{CF Klasse} bezeichnet.\cite{mothilal2020dice}
+%
+%% Black-Box vs. White-Box-Modelle
+%Bei ML-Modellen wird zwischen \textbf{Black-Box-} und \textbf{White-Box-Modellen} unterschieden. 
+%Black-Box-Modelle sind schwer erklärbar und für Domänenexperten unverständlich, sodass ein Ergebnis nicht nachvollziehbar für einen Menschen ist. Als White-Box-Modelle werden hingegen ML-Modelle bezeichnet, die erklärbare und nachvollziehbare Resultate liefern.\cite{8882211}
+%
+%% Lokale vs. Globale Erklärungsansätze
+%Ein \textbf{globaler} Erklärungsansatz verfolgt das Ziel, das gesamte Entscheidungsverhalten eines ML-Modells zu verstehen. Im Gegensatz dazu verfolgen \textbf{lokale} Ansätze das Ziel ein Modell in einem eingeschränkten, weniger komplexen Lösungsraum zu erklären.\cite{barredo2019explainable}
+
+%=================================
+
 
 % Problem
 % Ist das nicht in der Einleitung schon beschrieben oder muss das nochmal hier hin?
