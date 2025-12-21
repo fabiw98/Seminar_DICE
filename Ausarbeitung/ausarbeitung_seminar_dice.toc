@@ -23,6 +23,8 @@
 \contentsline {section}{\numberline {5.2}Demonstration eines Beispiels}{13}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Initialisierungsschritte}{14}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Generierung von Erklärungen}{15}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{18}{chapter.6}%
-\contentsline {chapter}{Literaturverzeichnis}{19}{chapter*.11}%
-\contentsline {chapter}{Eigenständigkeitserklärung}{20}{appendix.A}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Kritik}{18}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{18}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Kritische Betrachtung}{19}{section.6.2}%
+\contentsline {chapter}{Literaturverzeichnis}{21}{chapter*.11}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{22}{appendix.A}%

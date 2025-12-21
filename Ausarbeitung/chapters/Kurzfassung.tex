@@ -7,3 +7,9 @@
 %\kurzfassungEN
 %
 %The same in English.
+
+KI-Systeme treffen immer mehr Entscheidungen die das Leben von Menschen beeinflussen, wie Gewährung von Krediten oder die Klassifikation von Bewerbungen. Umso wichtiger ist die Nachvollziehbarkeit und eine Erklärung wieso diese Entscheidung getroffen wurde und was geändert werden muss, um ein anderes Ergebnis zu erhalten. Ein möglicher Erklärungsansatz, welcher konkrete Handlungsanweisungen aufzeigen kann, ist Diverse Counterfactual Explanations (DiCE). Hierbei werden diverse Gegenbeispiele generiert, um dem Anwender verschiedene Möglichkeiten zum Lösen des Problems zu geben.
+
+Die Methodik von DiCE verwendet eine kombinierte Verlustfunktion zur gleichzeitigen Optimierung von Gültigkeit, Proximität und Diversität. Während Proximität die Ähnlichkeit zur ursprünglichen Eingabe sicherstellt, bietet Diversität dem Anwender möglichst unterschiedliche Handlungsanweisungen. Es ist zu beachten, dass die beiden Konzepte hierbei konkurrierende Ziele verfolgen. Die Sparsität minimiert die Anzahl der geänderten Features in einem Nachbearbeitungsschritt, sodass die Machbarkeit der Beispiele zu erhöhen.
+
+Die Evaluation des Verfahrens wird anhand von vier Datensätzen und dem Vergleich mit vier Baselines und LIME. DiCE erreicht eine nahezu 100\%-ige Gültigkeit. Die Baselines fallen bei steigender Zahl an zu generierenden Beispielen stark ab. Die lokale Entscheidungsgrenze kann durch DiCE ebenfalls besser als LIME annähern. In der Praxis ist DiCE jedoch stark von der Vorarbeit der Anwender durch explizite Angabe von Randbedingungen abhängig, um hilfreiche Erklärungen zu generieren.

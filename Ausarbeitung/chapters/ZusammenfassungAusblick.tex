@@ -1,8 +1,48 @@
-\chapter{Zusammenfassung und Ausblick}
+\chapter{Zusammenfassung und Kritik}
 
-- zusammenfassung
-- Herausforderungen 
-- wo liegen die grenzen von dice?
-- was ist problematisch und was benötigt weitere forschung
+%- zusammenfassung
+%- Herausforderungen 
+%- wo liegen die grenzen von dice?
+%- was ist problematisch und was benötigt weitere forschung
+%- eigene kritische meinung, überlegungen, einschätzungen zu dice und der ergebnisse (sind ja nur begrenzt gut)
 
 %In diesem Kapitel soll die Arbeit noch einmal kurz zusammengefasst werden. Insbesondere sollen die wesentlichen Ergebnisse Ihrer Arbeit herausgehoben werden. Erfahrungen, die z.B. Benutzer mit der Mensch-Maschine-Schnittstelle gemacht haben oder Ergebnisse von Leistungsmessungen sollen an dieser Stelle präsentiert werden. Sie können in diesem Kapitel auch die Ergebnisse oder das Arbeitsumfeld Ihrer Arbeit kritisch bewerten. Wünschenswerte Erweiterungen sollen als Hinweise auf weiterführende Arbeiten erwähnt werden.
+
+In diesem Kapitel wird die Seminararbeit zunächst zusammengefasst und das Verfahren kritisch hinterfragt. Unter anderem werden grundlegende Probleme der Konzepte als auch fehlende Unterstützung der Anwender betrachtet. Zum Abschluss wird die eigene Meinung zum Verfahren auf Basis der zuvor genannten Kritik genannt.
+
+\section{Zusammenfassung}
+%Einleitung
+In der Seminararbeit wurde DiCE \cite{mothilal2020dice} als Erklärungsansatz für Black-Box-Modelle untersucht. Zu Beginn wurde aufgezeigt, dass Entscheidungen von KI-Systemen zunehmend das Leben von Menschen beeinflussen, weshalb die Nachvollziehbarkeit und Fairness der getroffenen Entscheidungen essentiell ist. Aufgrund der Komplexität von Modellen des maschinellen Lernens sind Verfahren notwendig, die es Menschen erlauben zu verstehen wie die lokalen Entscheidungsgrenzen der Modelle verlaufen. Ein Ansatz um dieses Problem zu lösen, ist das Framework DiCE. Dazu werden zu einer unerwünschten Entscheidung Gegenbeispiele, die sogenannten kontrafaktische Erklärungen, generiert. Diese Erklärungen sollen helfen, einem Anwender aufzuzeigen, was hätte anders sein müssen, um eine gewünschte Entscheidung zu erhalten.
+
+%Methodik
+Hierzu wurden in Kapitel 2 einige grundlegende Begrifflichkeiten eingeführt, die zum Verständnis der Methodik notwendig sind.
+Im Anschluss wurde das konkrete Vorgehen erläutert, wobei der Fokus auf den zentralen Konzepten: Proximität, Diversität und Sparsität lag. Proximität beschreibt die Nähe der generierten Erklärungen zu der ursprünglichen Eingabe. Nur wenn sie ähnlich sind, helfen sie dem Anwender bei der Nachvollziehbarkeit. Diversität zwischen den Counterfactuals erhöht die Machbarkeit für den Anwender, indem möglichst unterschiedliche Alternativen aufgezeigt werden. Diese beiden Konzepte werden in der Verlustfunktion kombiniert, auf deren Basis die Erklärungen generiert werden. Sparsität erhöht die Machbarkeit in einem Nachbearbeitungsschritt noch weiter, indem die Anzahl der veränderten Features zwischen ursprünglicher Eingabe und Counterfactual minimiert wird.
+
+%Evaluation
+Um die Ergebnisse bewerten zu können, wurden Metriken zu den Konzepten eingeführt. Als Vergleichsmethoden wurden vier Baselines und LIME \cite{Ribeiro.2016} verwendet und DiCE gegenüber gestellt. Es zeigte sich, dass DiCE in den verwendeten Datensätzen bessere Resultate als LIME und ähnliche Werte wie die Baselines erzielte. Bei der Proximität hingegen schneiden die Baselines teilweise besser ab als DiCE, da dieses durch die Diversität eine geringere Proximität erzielt wird.
+
+%Demo
+Zum Abschluss wurde DiCE an einem konkreten Beispiel demonstriert, welches von den Autoren zur Verfügung gestellt wird. Es wurde detailliert erläutert, wie die theoretischen Konzepte programmatisch umgesetzt wurden und wie DiCE in der Praxis angewendet werden kann. Weiterhin wurde auf die Anwendungsmöglichkeiten in der Praxis eingegangen und wie das Verfahren Anwendern im Alltag unterstützen kann.
+
+
+\section{Kritische Betrachtung}
+%Kritik und Herausforderungen von DiCE
+Der Erklärungsansatz von DiCE, durch Gegenbeispiele einem Anwender die Entscheidung nachvollziehen zu lassen, ist sehr einfach zu verstehen und daher praktisch breit anwendbar. Die Methodik weist jedoch einige Probleme auf. 
+
+%Machbarkeitsproblem durch manuelle Limitierung der änderbaren Features
+Die Machbarkeit wird durch die Diversität und Sparsität verbessert, jedoch wird ein wichtiger Schritt an den Anwender abgegeben. DiCE macht keine direkten Einschränkungen, welche Features der Eingabe änderbar sein sollen \cite{mothilal2020dice}. Das Verfahren behandelt zum Beispiel die Änderung der ethnischen Zugehörigkeit, die Verringerung des Alters als auch die Änderung des Wohnorts als gleichwertig. Das bedeutet, dass die Einschränkung der änderbaren Features und die Festlegung von Intervallen in denen die Werte verändert werden dürfen, durch den Anwender jedes mal selbst festgelegt werden muss. Dies ist zeitintensiv und erfordert unter Umständen tiefes Verständnis der betrachteten Domäne und des Individuums. Beispielsweise wird ein Kredit aufgrund des Wohnorts abgelehnt. Ein Umzug ist aus familiären oder finanziellen Gründen für die eine Person nicht möglich, aber für die nächste Person unbedenklich und der einfachste Weg, damit das Modell den Kredit gewährt.
+
+%Zielkonflikt zwischen Proximität und Diversität
+Ein zweites Problem ist die Verlustfunktion selbst. Aufgrund der konkurrierenden Zielen von Proximität und Diversität, werden diese beiden Konzepte in der Verlustfunktion durch die beiden $\lambda$-Parameter gewichtet \cite{mothilal2020dice}. Sollen die Erklärungen näher an der ursprünglichen Eingabe liegen, um die Relevanz für den Anwender zu erhöhen, wird automatisch die Distanz zwischen den Erklärungen verringert, sodass die Counterfactuals sich weniger unterscheiden. Dies reduziert aber die Wahrscheinlichkeit, dass der Anwender eine machbare Alternative findet.
+
+%Kognitive Überlastung durch zu viele Erklärungen
+Als letztes Problem ist die Anzahl der Counterfactuals zu betrachten. DiCE bietet die Möglichkeit viele Erklärungen zu generieren. Hierbei stellt sich die Frage, wie viele Beispiele ein Anwender überhaupt überblicken und verarbeiten kann. Unter Betrachtung des vorherigen Kreditbeispiels sind vermutlich 1000 Änderungsmöglichkeiten zum Erhalt des Kredits für einen Anwender überfordernd. Dieser Punkt der kognitiven Überlastung durch eine zu große Menge an Informationen wurde durch die Autoren nicht näher betrachtet \cite{mothilal2020dice}. Die Aufgabe der optimalen Anzahl wird erneut dem Anwender selbst überlassen.
+\\
+\\
+%Eigene Meinung
+Meiner Meinung nach stellt DiCE einen guten Ansatz dar, um komplexe Modelle für einen Anwender verständlich und nachvollziehbar zu machen. Die Verwendung von Beispielen als Erklärung ist intuitiv und leicht verständlich, auch ohne technisches Verständnis und lässt einen Einblick in die Entscheidungsgrenzen des Modells zu. Weiterhin ist der Anwender nicht auf eine einzelne Erklärung beschränkt, sondern kann sich die beste Variante heraussuchen. Verbesserungswürdig ist die umfangreiche Vorarbeit durch den Anwender die notwendig ist, um die sinnvolle Erklärungen zu erhalten. Dies reduziert die Anwendung in der Praxis, insbesondere für den unkomplizierten Einsatz durch einen Laien. Eine Unterstützung durch Sortierung der Erklärungen nach Machbarkeit wäre wünschenswert, um die Verwendbarkeit von DiCE zu erhöhen. Wie die Autoren selbst angemerkt haben ist auch die Aussagekraft der Paper-Ergebnisse limitiert, da keine Verhaltensstudie zur Bewertung der Entscheidungsgrenze mit Menschen durchgeführt wurde.
+
+
+
+
+
