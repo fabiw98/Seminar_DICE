@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  21 DEC 2025 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  4 JAN 2026 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1094,7 +1094,7 @@ bibgerm.sty: babel.sty detected
 
 pdfTeX warning: pdflatex.exe (file ./images/logo-fb-informatik.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/logo-fb-informatik.pdf, id=142, 811.81792pt x 157.11497pt>
+<images/logo-fb-informatik.pdf, id=146, 811.81792pt x 157.11497pt>
 File: images/logo-fb-informatik.pdf Graphic file (type pdf)
 <use images/logo-fb-informatik.pdf>
 Package pdftex.def Info: images/logo-fb-informatik.pdf  used on input line 95.
@@ -1150,17 +1150,17 @@ Kapitel 3.
 
 
 ] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 148--153
+Underfull \hbox (badness 10000) in paragraph at lines 146--151
 
  []
 
-[6]) (chapters/BewertungDerErklÃ¤rungen.tex [7]
+) (chapters/BewertungDerErklÃ¤rungen.tex [6] [7]
 Kapitel 4.
 [8
 
 
 ] [9]
-<images/decision_boundry.png, id=315, 824.32968pt x 496.85625pt>
+<images/decision_boundry.png, id=321, 824.32968pt x 496.85625pt>
 File: images/decision_boundry.png Graphic file (type png)
 <use images/decision_boundry.png>
 Package pdftex.def Info: images/decision_boundry.png  used on input line 72.
@@ -1184,9 +1184,9 @@ otebooks/DiCE_getting_started.ipynb,
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 45.
- [14] [15] [16]) (chapters/ZusammenfassungAusblick.tex [17]
+ [14] [15] [16] [17]) (chapters/ZusammenfassungAusblick.tex [18]
 Kapitel 6.
-[18
+[19
 
 
 ]
@@ -1194,7 +1194,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
  []
 
-[19]) [20] (ausarbeitung_seminar_dice.bbl
+[20]) [21] (ausarbeitung_seminar_dice.bbl
 Underfull \hbox (badness 1052) in paragraph at lines 44--46
 []\T1/cmr/m/it/12 Proceedings of the Con-fe-rence on Fair-ness, Ac-coun-ta-bi-l
 i-ty, and
@@ -1202,7 +1202,7 @@ i-ty, and
 
 )
 No file ausarbeitung_seminar_dice.ind.
-[21
+[22
 
 
 
@@ -1235,166 +1235,236 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[22
+[23
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/bx/n/9 Mit wel-cher
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/bx/n/9 Ein-ga-be-fra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/bx/n/9 ge bzw. -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/bx/n/9 An wel-cher
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/bx/n/9 Stel-le der
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 122--122
+Underfull \hbox (badness 6445) in paragraph at lines 124--124
 \T1/cmr/bx/n/9 Ar-beit über-
  []
 
 
-Underfull \hbox (badness 6078) in paragraph at lines 122--122
+Underfull \hbox (badness 6078) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 ChatGPT, De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 Korrektur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 bzgl. Recht-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 schrei-bung,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 Verbesserung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 Textabschnitte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 mit der Auf-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 for-de-rung zur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 Erstellung der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 Schnelle und
  []
 
 
-Underfull \hbox (badness 7981) in paragraph at lines 122--122
+Underfull \hbox (badness 7981) in paragraph at lines 124--124
 \T1/cmr/m/n/9 ein-fa-che Mo-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 fi-ka-ti-on durch
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 122--122
+Underfull \hbox (badness 1769) in paragraph at lines 124--124
 []|\T1/cmr/m/n/9 Für die Ab-bil-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 in La-tex mit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 dem In-halt:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 in-put [200\TS1/cmr/m/n/9 ¿\T1/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 Männ-lich, Ar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 beits-los] ->
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 Black-Box ->
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 Bei-spiel zur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 Er-läu-te-rung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 der Da-ten-ver-
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 122--122
+Underfull \hbox (badness 2951) in paragraph at lines 124--124
 \T1/cmr/m/n/9 ar-bei-tung ei-nes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/cmr/m/n/9 Black-Box-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 Eva-lua-ti-ons-s-
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 124--124
+[]|\T1/cmr/m/n/9 Autoren ha-ben
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 kei-ne ei-ge-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 Eva-lua-ti-on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 be-reit-ge-stellt,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 da-her wur-de
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 124--124
+\T1/cmr/m/n/9 die-se mit Hil-fe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 von Ge-mi-ni
+ []
+
+
+Underfull \hbox (badness 4713) in paragraph at lines 124--124
+\T1/cmr/m/n/9 an-ge-fer-tigt, für
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 ei-ne bes-se-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 Dis-kus-si-on der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]|\T1/cmr/m/n/9 Als Ein-ga-be
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 124--124
+\T1/cmr/m/n/9 tri-ken und die
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 De-mons-tra-ti-on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-) [23] (ausarbeitung_seminar_dice.aux
+) [24] (ausarbeitung_seminar_dice.aux
 (chapters/Eigenstaendigkeitserklaerung.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1402,16 +1472,16 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 4C9B2321E1E3B7BF1A28FD5792CD2555;5190.
+(rerunfilecheck)             Checksum: BB5145B8AEFA1166E35818D8D46CD445;5363.
  ) 
 Here is how much of TeX's memory you used:
- 28658 strings out of 474486
- 530509 string characters out of 5743756
+ 28663 strings out of 474486
+ 530593 string characters out of 5743756
  1959542 words of memory out of 5000000
- 50280 multiletter control sequences out of 15000+600000
+ 50282 multiletter control sequences out of 15000+600000
  577182 words of font info for 85 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 84i,26n,93p,1183b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,26n,93p,1603b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0900.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1446,9 +1516,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/fabia/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (27 pages, 930438 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (28 pages, 936018 bytes).
 PDF statistics:
- 1300 PDF objects out of 1440 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1325 PDF objects out of 1440 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

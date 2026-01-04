@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.1.3}Einordnung von Erklärungsmodellen}{3}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}Definition von DiCE}{3}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Methodisches Vorgehen}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Zentrale Konzepte}{4}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Zentrale Konzepte}{5}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Optimierung der Counterfactuals}{6}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Evaluation der Methodik}{8}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Evaluationsmetriken}{8}{section.4.1}%
@@ -21,10 +21,11 @@
 \contentsline {chapter}{\numberline {5}Anwendbarkeit und Bedeutung in der Praxis}{13}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Relevanz in der Praxis}{13}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Demonstration eines Beispiels}{13}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Initialisierungsschritte}{14}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Vorbereitungsschritte}{14}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Generierung von Erklärungen}{15}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Kritik}{18}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Zusammenfassung}{18}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Kritische Betrachtung}{19}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{21}{chapter*.11}%
-\contentsline {chapter}{Eigenständigkeitserklärung}{22}{appendix.A}%
+\contentsline {subsection}{\numberline {5.2.3}Evaluation des Beispiels}{17}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Kritik}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Kritische Betrachtung}{20}{section.6.2}%
+\contentsline {chapter}{Literaturverzeichnis}{22}{chapter*.12}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{23}{appendix.A}%

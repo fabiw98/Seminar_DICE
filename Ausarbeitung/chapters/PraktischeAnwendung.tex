@@ -39,7 +39,7 @@ Die ersten fünf Einträge des Datensatzes sind in Tabelle \ref{datensatz_head} 
 	\end{tabular}
 \end{table}
 
-\subsection{Initialisierungsschritte}
+\subsection{Vorbereitungsschritte}
 
 In Listing \ref{lst:datasetsplit} wird zunächst der Datensatz geladen und in Trainings- sowie Testdaten aufgeteilt. In diesem Beispiel werden 80\% des Datensatzes für das Training verwendet und 20\% für die Tests. Die Variablen \texttt{x\_train} und \texttt{x\_test} enthalten die Features der Trainings- bzw. Testdaten, während \texttt{y\_train} und \texttt{y\_test} die zugehörigen Zielklassen (Einkommen) enthalten. In diesem Beispiel wird kein ML-Modell trainiert, sondern ein vor-trainiertes Modell aus der DiCE-Bibliothek der Autoren verwendet.
 \begin{lstlisting}[caption={Laden und Aufteilung des Datensatzes in Trainings- und Testdaten.}, label={lst:datasetsplit}]
@@ -162,9 +162,24 @@ dice_exp.visualize_as_dataframe(show_only_changes=True)
 Es ist bei den Einschränkungen zu beachten, dass zu viele Limitierungen eine Generierung von Erklärungen verhindern kann. Wird der Familienstand in dem obigen Beispiel als unveränderlich betrachtet, so findet DiCE keine Counterfactuals mehr. Dieses Phänomen kann auf einen Bias im Datensatz $adult$ hindeuten, da die weibliche Person unter den angebenden Einschränkungen aus Tabelle \ref{tab:cf_input} nicht ohne Heirat in die höhere Einkommensklasse aufsteigen kann.
 
 
-%\subsection{Evaluation des Beispiels}
-%qualtitative eval => gibt leider keinen code im repo ... 
-
+\subsection{Evaluation des Beispiels}
+Unter Verwendung der Metriken aus Kapitel 4 lassen sich die beschränkten und unbeschränkten Counterfactuals aus den Tabellen \ref{tab:cf_output} und \ref{tab:cf_output_optimized} in Tabelle \ref{tab:evaluation_comparison} bewerten und vergleichen. Neben der Gültigkeit aller Counterfactuals sind ebenfalls die gleichbleibenden Werte für die kategoriale Proximität und Sparsität hervorzuheben. Die lässt sich darin begründen, dass für die beiden CF-Mengen im Durchschnitt zwei der sechs kategorialen Features geändert wurden. Die gleiche Argumentation gilt für die Sparsität. Auf der anderen Seite zeigt die kontinuierliche Proximität große Unterschiede zwischen den beiden CF-Mengen. Der hohe Wert der unbeschränkten Counterfactuals ist das Resultat aus der starken Erhöhung des Alters und der Wochenarbeitsstunden. Da diese Features bei der zweiten Generierung limitiert wurden, weisen die beschränkten Counterfactuals eine größere Nähe zu der ursprünglichen Eingabe auf. Aus der gestiegenen Proximität durch die Beschränkungen folgt allerdings eine sinkende Diversität, insbesondere für die kontinuierlichen Features. Dies ist zu erwarten, da die möglichen Variationen der ursprünglichen Eingabe stark eingeschränkt wurden, sodass sich die generierten Counterfactuals sehr ähnlich sind. Die Evaluationsergebnisse der Demonstration zeigen die Grenzen von DiCE und die konkurrierenden Ziele zwischen Diversität und Proximität auf.
+\begin{table}[h]
+	\centering
+	\caption{Vergleich der Evaluationsergebnisse für unbeschränkte (Tabelle \ref{tab:cf_output}) und beschränkte (Tabelle \ref{tab:cf_output_optimized}) Counterfactuals.}
+	\label{tab:evaluation_comparison}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\textbf{Evaluationsmetrik} & \textbf{Unbeschränkte CFs} & \textbf{Beschränkte CFs} \\ \hline
+		Gültigkeit (\%ValidCFs) & 1,0000 & 1,0000 \\ \hline
+		Kontinuierliche Proximität & -6,7125 & -2,9500 \\ \hline
+		Kategoriale Proximität & 0,6667 & 0,6667 \\ \hline
+		Sparsität & 0,6250 & 0,6250 \\ \hline
+		Kontinuierliche Diversität & 6,8417 & 0,4333 \\ \hline
+		Kategoriale Diversität & 0,2500 & 0,2778 \\ \hline
+		Count Diversität & 0,3750 & 0,3125 \\ \hline
+	\end{tabular}
+\end{table}
 
 
 

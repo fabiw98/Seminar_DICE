@@ -5,10 +5,8 @@
 
 Nachdem die theoretischen Grundlagen definiert wurden, befasst sich dieses Kapitel mit dem methodischen Vorgehen von DiCE. 
 
-Die Kernidee lässt sich am besten als ein Suchprozess beschreiben: Ausgehend von einer ursprünglichen Eingabe, die zu einem unerwünschten Ergebnis geführt hat, sucht das Verfahren nach einer optimalen Menge von Alternativszenarien. Anstatt dem Anwender lediglich zu sagen, dass er abgelehnt wurde, generiert DiCE eine Erklärung, was hätte anders sein müssen, um das gewünschte Resultat zu erhalten.
-
-%Beispiel
-Ein anschauliches Beispiel hierfür ist die Ablehnung eines Kreditantrags durch ein ML-Modell. DiCE kann hier aufzeigen, dass der Kredit bewilligt worden wäre, wenn beispielsweise das Einkommen um 100\euro{} höher oder die Kreditsumme um 5000\euro{} niedriger ausgefallen wäre.
+Die Kernidee lässt sich am besten als ein Suchprozess beschreiben. Ausgehend von einer ursprünglichen Eingabe, die zu einem unerwünschten Ergebnis geführt hat, sucht das Verfahren nach einer optimalen Menge von Alternativszenarien, wie in Abbildung \ref{fig:dice-methodik-overview} dargestellt wird. Anstatt dem Anwender lediglich zu sagen, dass der Kredit abgelehnt wurde, generiert DiCE eine Erklärung, was hätte anders sein müssen, um das gewünschte Resultat zu erhalten.
+DiCE kann aufzeigen, dass der Kredit bewilligt worden wäre, wenn beispielsweise das Einkommen um 100\euro{} höher oder die Kreditsumme um 5000\euro{} niedriger ausgefallen wäre.
 
 Der methodische Ablauf von DiCE lässt sich in drei Phasen unterteilen:
 \begin{enumerate}
@@ -58,7 +56,7 @@ In den folgenden Abschnitten werden zunächst die zentralen Konzepte erläutert,
 		
 		% 1. Eingabe-Block mit deinen präzisen Begriffen
 		\node[databox] (input) {
-			\textbf{Eingangswerte} \\
+			\textbf{Eingabe} \\
 			\vspace{0.1cm}
 			\footnotesize
 			Feature-Vektor \\
@@ -75,14 +73,14 @@ In den folgenden Abschnitten werden zunächst die zentralen Konzepte erläutert,
 		
 		% 3. Ergebnis-Block
 		\node[databox, right=of dice] (output) {
-			\textbf{Ergebnis} \\
+			\textbf{Ausgabe} \\
 			\vspace{0.1cm}
 			Menge von $k$ \\ Counterfactuals
 		};
 		
 		% 4. Die Konzepte (Überschrift angepasst an deinen Text)
 		\node [above=1cm of dice, text width=6cm, align=center, font=\small] (concepts) 
-		{\textbf{Zentrale Konzepte:}\\ \textit{Proximität, Diversität, Sparsität}};
+		{ \textit{Proximität, Diversität, Sparsität}};
 		
 		% --- Pfeile ---
 		\draw[myarrow] (input) -- (dice);
