@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  4 JAN 2026 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  9 JAN 2026 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,9 +1173,9 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 [12]
 Kapitel 5.
 
-Overfull \hbox (17.81653pt too wide) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 [][][]\T1/cmr/m/n/9 https://github.com/interpretml/DiCE/blob/main/docs/source/n
-otebooks/DiCE_getting_started.ipynb,
+otebooks/DiCE_getting_started
  []
 
 [13
@@ -1390,8 +1390,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--124
  []
 
 
+Underfull \hbox (badness 1803) in paragraph at lines 124--124
+\T1/cmr/m/n/9 Skripts für die
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T1/cmr/m/n/9 Eva-lua-ti-ons-s-
+\T1/cmr/m/n/9 Eva-lua-ti-ons-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 me-tri-ken und
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 de-ren Be-rech-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 nung für das
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/cmr/m/n/9 de-mons-trier-te
  []
 
 
@@ -1516,7 +1541,7 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/fabia/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (28 pages, 936018 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (28 pages, 936102 bytes).
 PDF statistics:
  1325 PDF objects out of 1440 (max. 8388607)
  139 named destinations out of 1000 (max. 500000)
