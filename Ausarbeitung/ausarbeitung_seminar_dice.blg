@@ -7,47 +7,46 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: chapters/Eigenstaendigkeitserklaerung.aux
 Database file #1: literatur.bib
-Warning--to sort, need editor, organization, or key in Watcher.2019
 Warning--empty journal in barredo2019explainable
 You've used 7 entries,
             2768 wiz_defined-function locations,
-            647 strings with 6552 characters,
-and the built_in function-call counts, 3467 in all, are:
-= -- 367
-> -- 137
+            651 strings with 6727 characters,
+and the built_in function-call counts, 3638 in all, are:
+= -- 384
+> -- 161
 < -- 5
-+ -- 48
-- -- 48
-* -- 270
-:= -- 524
++ -- 57
+- -- 57
+* -- 286
+:= -- 561
 add.period$ -- 16
 call.type$ -- 7
-change.case$ -- 37
+change.case$ -- 40
 chr.to.int$ -- 7
-cite$ -- 10
-duplicate$ -- 155
-empty$ -- 268
-format.name$ -- 53
-if$ -- 769
+cite$ -- 8
+duplicate$ -- 156
+empty$ -- 263
+format.name$ -- 63
+if$ -- 799
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 31
-num.names$ -- 18
+missing$ -- 11
+newline$ -- 32
+num.names$ -- 21
 pop$ -- 45
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 54
 quote$ -- 0
-skip$ -- 137
+skip$ -- 146
 stack$ -- 0
-substring$ -- 210
-swap$ -- 54
+substring$ -- 209
+swap$ -- 57
 text.length$ -- 5
 text.prefix$ -- 1
 top$ -- 0
-type$ -- 54
-warning$ -- 2
-while$ -- 28
-width$ -- 12
-write$ -- 87
-(There were 2 warnings)
+type$ -- 56
+warning$ -- 1
+while$ -- 31
+width$ -- 9
+write$ -- 88
+(There was 1 warning)

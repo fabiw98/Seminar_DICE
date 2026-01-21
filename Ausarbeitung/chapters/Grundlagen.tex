@@ -7,8 +7,8 @@ In diesem Kapitel werden zunächst wichtige Begriffe aus dem Bereich der erklär
 
 Das Framework DiCE wird primär im Bereich der überwachten Klassifikation eingesetzt, weshalb der Fokus der folgenden Definitionen auf diesem Teilbereich des maschinellen Lernens liegt.
 
-\subsection{Formaler Rahmen der Klassifikation}
-Im Kontext dieser Arbeit wird ein \textbf{Modell des maschinellen Lernens} als eine Funktion betrachtet, die Eingabedaten einer bestimmten Kategorie zuordnet. Die Eingabe erfolgt in Form eines \textbf{Feature-Vektors}, welcher die numerischen und kategorischen Merkmale eines Objekts zusammenfasst. Das Ergebnis der Verarbeitung ist die Zuordnung zu einer diskreten \textbf{Klasse}, wie in Abbildung \ref{fig:ml-prozess} exemplarisch gezeigt wird. 
+\subsection{Modell des maschinellen Lernens}
+Im Kontext dieser Arbeit wird ein \textbf{Modell des maschinellen Lernens} als eine Funktion betrachtet, die Eingabedaten einer bestimmten Kategorie zuordnet. Die Eingabe erfolgt in Form eines \textbf{Feature-Vektors}, welcher die numerischen und kategorialen Merkmale eines Objekts zusammenfasst. Das Ergebnis der Verarbeitung ist die Zuordnung zu einer diskreten \textbf{Klasse}, wie in Abbildung \ref{fig:ml-prozess} exemplarisch gezeigt wird. 
 Während ML-Modelle auch für kontinuierliche Vorhersagen genutzt werden können, konzentriert sich die Generierung von Counterfactuals auf die Veränderung der Klassenzugehörigkeit.
 \begin{figure}[htbp]
 	\centering
@@ -82,8 +82,8 @@ Während ML-Modelle auch für kontinuierliche Vorhersagen genutzt werden können
 
 
 \subsection{Kontrafaktische Erklärungen}
-Eine \textbf{kontrafaktische Erklärung}, auch Counterfactual (CF) genannt, setzt dort an, wo die ursprüngliche Eingabe zu einer aus Anwendersicht unerwünschten Klasse führt. Ein Counterfactual ist ein modifiziertes Gegenbeispiel zur ursprünglichen Eingabe, welches so gewählt wird, dass das Modell eine \textbf{erwünschte Klasse} (CF-Klasse) ausgibt. 
-Das Ziel ist es, dem Anwender die minimal notwendigen Änderungen aufzuzeigen, um ein gewünschtes Ergebnis zu erzielen.\cite{mothilal2020dice}
+Eine \textbf{kontrafaktische Erklärung}, auch Counterfactual (CF) genannt, ist ein modifiziertes Gegenbeispiel zur ursprünglichen Eingabe, welches so gewählt wird, dass das Modell eine \textbf{erwünschte Klasse} (CF-Klasse) ausgibt. 
+Das Ziel eines von DiCE generierten Counterfactuals ist es, dem Anwender die minimal notwendigen Änderungen aufzuzeigen, um ein gewünschtes Ergebnis zu erzielen. Ein Beispiel für eine Erklärung ist in Abbildung \ref{fig:ml-prozess-cf} gegeben. Im Vergleich zur ursprünglichen Eingabe (Abb. \ref{fig:ml-prozess}) wird dem Anwender aufgezeigt, dass bei einem höheren Einkommen und einer Anstellung als Beamter der gewünschte Kredit gewährt wird.\cite{mothilal2020dice}
 \begin{figure}[htbp]
 	\centering
 	\resizebox{\textwidth}{!}{
@@ -161,7 +161,7 @@ Erklärungsansätze lassen sich in zwei Kategorien, global und lokal, unterteile
 
 \section{Definition von DiCE}
 % DiCE: post-hoc, black-box, lokaler Ansatz
-\textbf{Di}verse \textbf{C}ounterfactual \textbf{E}xplanations (DiCE) ist ein Erklärungsansatz, um Entscheidungen von ML-Modellen für den Menschen verständlich zu machen. Es handelt sich um ein lokales, post-hoc Verfahren für Black-Box-Modelle. Die Erklärung des Modells findet somit nach der Trainingsphase statt und dient lediglich der Bewertung, Nachvollziehbarkeit sowie dem Aufzeigen von Schwächen oder einem Bias in den Ausgaben des Modells.
+\textbf{Di}verse \textbf{C}ounterfactual \textbf{E}xplanations (DiCE) ist ein Erklärungsansatz, um Entscheidungen von ML-Modellen für den Menschen verständlich zu machen. Es handelt sich um ein lokales, post-hoc Verfahren für Black-Box-Modelle. Die Erklärung des Modells findet somit nach der Trainingsphase statt und dient lediglich der Bewertung, Nachvollziehbarkeit sowie dem Aufzeigen von Schwächen oder einem Bias\footnote{Bias ist eine Voreingenommenheit des Modells aufgrund von Merkmalen wie Geschlecht oder ethnischer Herkunft.} in den Ausgaben des Modells.
 DiCE generiert zu einer Eingabe verschiedene Counterfactuals, um dem Anwender aufzuzeigen, welche Parameter sich für eine andere Klassifikation durch das ML-Modell ändern müssen. Eine wichtige Voraussetzung an das Verfahren ist, dass die Ausgabe binär sein muss. Die Counterfactuals werden so generiert, dass sie möglichst unterschiedlich sind, dabei jedoch möglichst nahe an der ursprünglichen Eingabe bleiben.\cite{mothilal2020dice}
 
 

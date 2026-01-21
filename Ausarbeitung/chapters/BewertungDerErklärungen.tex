@@ -84,18 +84,29 @@ Die Wirksamkeit von DiCE wurde von den Autoren anhand von vier realen Datensätz
 
 \subsection{Baselines und LIME}
 Vier Baselines werden zum Vergleich für die Generierung von Counterfactuals eingesetzt. 
-\textbf{SingleCF} generiert ein einzelnes auf Proximität und Gültigkeit optimiertes Counterfactual \cite{Watcher.2019}. 
+\textbf{SingleCF} generiert ein einzelnes auf Proximität und Gültigkeit optimiertes Counterfactual \cite{Wachter.2017}. 
 Die Methode \textbf{MixedIntegerCF} gegeneriert diverse Erklärungen durch Mixed Integer Programming \cite{Russell.2019}.
-Eine Erweiterung der SingleCF ist die Methode \textbf{RandoimInitCF} zur Generierung von $k$ Counterfactuals mit zufälligen Startpunkten und einer nicht-konvexen Verlustfunktion. 
-Die letzte Methode ist \textbf{NoDiversityCF}, wobei es die Verlustfunktion analog wie in DiCE zur gleichzeitigen Optimierung der Counterfactuals verwendet, wobei jedoch der $\lambda_2$-Parameter auf Null gesetzt wird, sodass der Diversitätsterm ignoriert wird.\cite{mothilal2020dice}
+Eine Erweiterung der SingleCF ist die Methode \textbf{RandomInitCF} zur Generierung von $k$ Counterfactuals mit zufälligen Startpunkten und einer nicht-konvexen\footnote{Nicht-konvexe Funktionen besitzen mehre (lokale) Minima.} Verlustfunktion. 
+Die letzte Methode ist \textbf{NoDiversityCF}, wobei es die Verlustfunktion analog wie in DiCE zur gleichzeitigen Optimierung der Counterfactuals verwendet, wobei jedoch der $\lambda_2$-Parameter auf Null gesetzt wird, sodass der Diversitätsterm ignoriert wird. Die nach der DiCE-Methodik generierten Counterfactuals werden als \textbf{DiversityCF} bezeichnet. Der optionale Nachbearbeitungsschritt zur Erhöhung der Sparsität wird separat betrachtet, indem der Zusatzterm \textbf{Sparse} angehängt wird.\cite{mothilal2020dice}
 
 Weiterhin wird DiCE mit LIME (Local Interpretable Model-agnostic Explanations) verglichen. Dieses Verfahren verfolgt einen merkmalsbasierten Erklärungsansatz, also dass die Wichtigkeit einzelner Features für eine Entscheidung bestimmt. LIME verwendet dafür ein vereinfachtes Ersatzmodell, sodass die Erklärung nicht wahrheitsgetreu gegenüber dem Originalmodell sein muss.\cite{Ribeiro.2016}
 
 \subsection{Ergebnisse}
-Über alle Datensätze hinweg zeigt DiCE durchgehend eine sehr hohe Gültigkeit von fast 100\% bei der Generierung von Counterfactuals. MixedIntegerCF weist über alle Datensätze eine mit der Anzahl an Erklärungen sinkende Gültigkeit auf. NoDiverseCF und RandomInitCF weisen eine hohe Gültigkeit ähnlich wie DiCE auf, wobei beim Datensatz COMPAS die Gültigkeit bei steigender Anzahl an geforderten CFs stark abfällt.  Dies liegt an der fehlenden Diversität der Verfahren, sodass diese redundante Counterfactuals generieren. Bei der Diversität ist DiCE signifikant besser als die Vergleichsmethoden, unabhängig ob kategorische oder kontinuierliche Features betrachtet werden. Dies hat Auswirkungen auf die Ergebnisse der Proximität, wo DiCE etwas geringere Werte als die Baselines erzielt.\cite{mothilal2020dice}
+Über alle Datensätze hinweg zeigt DiCE durchgehend eine sehr hohe Gültigkeit (siehe Abb. \ref{fig:ex-result-quant}) von fast 100\% bei der Generierung von Counterfactuals. MixedIntegerCF hingegen weist über alle Datensätze eine mit der Anzahl an Erklärungen sinkende Gültigkeit auf. NoDiverseCF und RandomInitCF weisen eine hohe Gültigkeit, vergleichbar mit DiCE auf, wobei beim Datensatz COMPAS die Gültigkeit bei steigender Anzahl an geforderten CFs stark abfällt.  Dies liegt an der fehlenden Diversität der Verfahren, sodass redundante Counterfactuals generiert werden. Aus diesem Grund weist DiCE bei der Diversität bessere Werte als die Vergleichsmethoden auf, unabhängig ob kategoriale oder kontinuierliche Features betrachtet werden. Dies hat Auswirkungen auf die Ergebnisse der Proximität und Sparsität, bei denen DiCE etwas geringere Werte als die nicht-diversen Methoden erzielt.\cite{mothilal2020dice}
+\begin{figure}[htbp] % h=here, t=top, b=bottom, p=page
+	\centering % Bild zentrieren
+	\includegraphics[width=1\textwidth]{images/ex-result.png} 
+	\caption{Auszug aus den experimentellen Ergebnissen des Papers \cite{mothilal2020dice} für den Datensatz \textit{Adult-Income}. Es werden die Baselines mit DiCE, hier \textit{DiverseCF} genannt, unter Verwendung der Metriken für Diversität, Proximität und Sparsität verglichen. Die Auswertungen enthalten Werte für CF-Mengen mit einem bis zehn Counterfactuals. }
+	\label{fig:ex-result-quant} % Wichtig für Querverweise im Text
+\end{figure}
 
-Neben der quantitativen Evaluation wurde auch die Näherung der Entscheidungsgrenze untersucht. Hierfür wurde ein einfacher 1-Nearest-Neighbor (1-NN) Klassifikator herangezogen und auf Erklärungen (DiCE) oder Stichproben (LIME) trainiert. DiCE erzielte bei fast durchgehend höhere F1-Scores beider Vorhersage der CF-Klassen als LIME. Dies lässt darauf schließen, dass DiCE einem Anwender die Entscheidungsgrenze besser vermitteln kann. Anzumerken ist, dass die Baseline-Verfahren NoDiverseCF und RandomInitCF ähnlich und teilweise etwas höhere F1-Scores aufweisen. Die Autoren merken an, dass Studien eine höhere Aussagekraft besitzen würden, bei denen die generierten Counterfactuals von Menschen auf ihre Erklärungsqualität evaluiert werden.\cite{mothilal2020dice}
-
+Neben der quantitativen Evaluation wurde auch die Näherung der Entscheidungsgrenze untersucht. Hierfür wurde ein einfacher 1-Nearest-Neighbor (1-NN) Klassifikator verwendet und auf Erklärungen (DiCE) oder Stichproben (LIME) trainiert. DiCE erzielte fast durchgehend höhere F1-Scores bei der Vorhersage der CF-Klassen als LIME. F1 ist eine Metrik und kombiniert Recall und Precision in einem Wert. Sie ist ein Maß für wie gut eine Methodik die Klasse korrekt vorhersagen kann. Dies lässt darauf schließen, dass DiCE einem Anwender die Entscheidungsgrenze besser aufzeigen kann. In Abbildung \ref{fig:ex-result-qual} fällt zudem auf, dass DiCE hohe Recall-Werte aufweist. Anzumerken ist, dass die Baseline-Verfahren NoDiverseCF und RandomInitCF ähnliche sowie höhere F1-Scores aufweisen. Die Autoren merken an, dass die Aussagekraft dieser Evaluationsmethode begrenzt ist und eine Studie der Goldstandard ist, wobei die generierten Counterfactuals von Menschen auf ihre Erklärungsqualität evaluiert werden.\cite{mothilal2020dice}
+\begin{figure}[htbp] % h=here, t=top, b=bottom, p=page
+	\centering % Bild zentrieren
+	\includegraphics[width=0.8\textwidth]{images/ex-result-qual.png} 
+	\caption{Auszug aus den experimentellen Ergebnissen des Papers \cite{mothilal2020dice} für den Datensatz \textit{Adult-Income}. Es werden die F1-Scores (links), Precision (mitte) und Recall (rechts) für DiCE, die Baselines und LIME dargestellt. Die Auswertungen enthalten Werte für CF-Mengen mit einem bis zehn Counterfactuals.}
+	\label{fig:ex-result-qual} % Wichtig für Querverweise im Text
+\end{figure}
 
 
 

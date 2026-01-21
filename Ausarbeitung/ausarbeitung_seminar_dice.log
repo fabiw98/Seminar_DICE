@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  9 JAN 2026 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.9)  18 JAN 2026 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,23 +1144,23 @@ Kapitel 2.
 [2
 
 
-]) (chapters/Methodik.tex [3]
+]) (chapters/Methodik.tex [3] [4]
 Kapitel 3.
-[4
+[5
 
 
-] [5]
+] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 146--151
 
  []
 
-) (chapters/BewertungDerErklärungen.tex [6] [7]
+[7]) (chapters/BewertungDerErklärungen.tex [8]
 Kapitel 4.
-[8
+[9
 
 
-] [9]
-<images/decision_boundry.png, id=321, 824.32968pt x 496.85625pt>
+] [10]
+<images/decision_boundry.png, id=329, 824.32968pt x 496.85625pt>
 File: images/decision_boundry.png Graphic file (type png)
 <use images/decision_boundry.png>
 Package pdftex.def Info: images/decision_boundry.png  used on input line 72.
@@ -1169,8 +1169,19 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 3.
  (C:\Users\fabia\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [10] [11 <./images/decision_boundry.png>]) (chapters/PraktischeAnwendung.tex
-[12]
+) [11] [12 <./images/decision_boundry.png>]
+<images/ex-result.png, id=355, 693.34032pt x 406.51875pt>
+File: images/ex-result.png Graphic file (type png)
+<use images/ex-result.png>
+Package pdftex.def Info: images/ex-result.png  used on input line 98.
+(pdftex.def)             Requested size: 418.25368pt x 245.23436pt.
+<images/ex-result-qual.png, id=360, 475.7775pt x 219.82124pt>
+File: images/ex-result-qual.png Graphic file (type png)
+<use images/ex-result-qual.png>
+Package pdftex.def Info: images/ex-result-qual.png  used on input line 106.
+(pdftex.def)             Requested size: 334.60422pt x 154.60167pt.
+ [13 <./images/ex-result.png>])
+(chapters/PraktischeAnwendung.tex [14 <./images/ex-result-qual.png>]
 Kapitel 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
@@ -1178,15 +1189,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 otebooks/DiCE_getting_started
  []
 
-[13
+[15
 
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 45.
- [14] [15] [16] [17]) (chapters/ZusammenfassungAusblick.tex [18]
+ [16] [17] [18] [19]) (chapters/ZusammenfassungAusblick.tex [20]
 Kapitel 6.
-[19
+[21
 
 
 ]
@@ -1194,15 +1205,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
  []
 
-[20]) [21] (ausarbeitung_seminar_dice.bbl
-Underfull \hbox (badness 1052) in paragraph at lines 44--46
-[]\T1/cmr/m/it/12 Proceedings of the Con-fe-rence on Fair-ness, Ac-coun-ta-bi-l
-i-ty, and
- []
-
-)
+[22]) [23] (ausarbeitung_seminar_dice.bbl)
 No file ausarbeitung_seminar_dice.ind.
-[22
+[24
 
 
 
@@ -1235,7 +1240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[23
+[25
 
 
 
@@ -1489,7 +1494,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-) [24] (ausarbeitung_seminar_dice.aux
+) [26] (ausarbeitung_seminar_dice.aux
 (chapters/Eigenstaendigkeitserklaerung.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1497,13 +1502,13 @@ L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `ausarbeitung_seminar_dice.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: BB5145B8AEFA1166E35818D8D46CD445;5363.
+(rerunfilecheck)             Checksum: 7FCE49C22717A7296FDBB6148C471573;5348.
  ) 
 Here is how much of TeX's memory you used:
- 28663 strings out of 474486
- 530593 string characters out of 5743756
+ 28685 strings out of 474486
+ 531115 string characters out of 5743756
  1959542 words of memory out of 5000000
- 50282 multiletter control sequences out of 15000+600000
+ 50298 multiletter control sequences out of 15000+600000
  577182 words of font info for 85 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  84i,26n,93p,1603b,2059s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1514,9 +1519,9 @@ Here is how much of TeX's memory you used:
 pen/ec/dpi600\ectt0800.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\fabia\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\fabia\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\fabia\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\fabia\AppDat
+ts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\fabia\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\fabia\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\fabia\AppDat
 a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\fabia\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\
 fabia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\
@@ -1541,9 +1546,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fabia/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/fabia/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/fabia/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ausarbeitung_seminar_dice.pdf (28 pages, 936102 bytes).
+Output written on ausarbeitung_seminar_dice.pdf (30 pages, 1078386 bytes).
 PDF statistics:
- 1325 PDF objects out of 1440 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1355 PDF objects out of 1440 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 361 words of extra memory for PDF output out of 10000 (max. 10000000)
 

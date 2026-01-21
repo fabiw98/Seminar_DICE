@@ -121,7 +121,7 @@ Weiterhin ist zu beachten, dass zwar ein Counterfactual ähnlich zu dem ursprün
 
 \section{Optimierung der Counterfactuals}
 
-DiCE hat das Ziel eine Menge an $k$ Counterfactuals für einen Eingabevektor $x$ zu finden. Um die optimale Menge $C(x)$ zu ermitteln, wird die \textbf{Verlustfunktion} in Gleichung \ref{loss-function} verwendet und nach den Argumenten gesucht, welche die Gesamtfunktion minimieren. Die Optimierung wird über ein Gradientenabstiegsverfahren realisiert, wobei die $k$ Counterfactuals zufällig initialisiert werden.\cite{mothilal2020dice}
+DiCE hat das Ziel eine Menge an $k$ Counterfactuals für einen Eingabevektor $x$ zu finden. Um die optimale Menge $C(x)$ zu ermitteln, wird die \textbf{Verlustfunktion} in Gleichung \ref{loss-function} verwendet und nach den Argumenten gesucht, welche die Gesamtfunktion minimieren. Die Optimierung wird über ein Gradientenabstiegsverfahren realisiert, wobei die $k$ Counterfactuals zufällig initialisiert werden. Beim Gradientenabstiegsverfahren wird das Minimum einer Funktion schrittweise gesucht, indem jeweils ein Schritt in die Richtung des steilsten Abstiegs gegangen wird.\cite{mothilal2020dice}
 
 \begin{equation}\label{loss-function}
 	\begin{split}
@@ -147,6 +147,6 @@ Um die Gesamtfunktion zu minimieren, muss der dritte Term maximiert werden. Die 
 \\
 \\
 % Sparsität
-Die Verlustfunktion bestimmt eine optimale Menge an Counterfactuals bezüglich Gültigkeit, Proximität und Diversität, vernachlässigt jedoch die Sparsität. Aus diesem Grund erfolgt eine Nachbearbeitung der CFs, um die Sparsität zu erhöhen. Dazu wird ein Greedy-Algorithmus verwendet, welcher jedes Counterfactuals einzeln betrachtet. Der Algorithmus versucht jedes kontinuierliche Feature des CFs $c_i$ auf den Wert des ursprünglichen Eingabevektors $x$ zurückzusetzen, ohne dass sich die Vorhersage des ML-Modells $f(c_i)$ ändert. Dabei wird das Zurücksetzen zuerst bei Features mit geringen Änderungen versucht.\cite{mothilal2020dice}
+Die Verlustfunktion bestimmt eine optimale Menge an Counterfactuals bezüglich Gültigkeit, Proximität und Diversität, vernachlässigt jedoch die Sparsität. Aus diesem Grund erfolgt eine Nachbearbeitung der CFs, um die Sparsität zu erhöhen. Dazu wird ein Greedy-Algorithmus verwendet, welcher jedes Counterfactual einzeln betrachtet. Der Algorithmus versucht jedes kontinuierliche Feature des CFs $c_i$ auf den Wert des ursprünglichen Eingabevektors $x$ zurückzusetzen, ohne dass sich die Vorhersage des ML-Modells $f(c_i)$ ändert. Dabei wird das Zurücksetzen zuerst bei Features mit geringen Änderungen versucht.\cite{mothilal2020dice}
 
 

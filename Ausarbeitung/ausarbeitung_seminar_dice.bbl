@@ -40,8 +40,10 @@
   Accountability, and Transparency}, \btxpageslong{}\ 20--28, New York, NY,
   USA, 2019. ACM.
 
-\bibitem[Wat19]{Watcher.2019}
-{\em Proceedings of the Conference on Fairness, Accountability, and
-  Transparency}, New York, NY, USA, 2019. ACM.
+\bibitem[WMR17]{Wachter.2017}
+{\sc Wachter, Sandra}, {\sc Brent Mittelstadt} \btxandlong{}\ {\sc Chris
+  Russell}: {\em Counterfactual Explanations Without Opening the Black Box:
+  Automated Decisions and the GDPR}.
+\newblock SSRN Electronic Journal, 2017.
 
 \end{thebibliography}

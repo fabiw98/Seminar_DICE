@@ -97,7 +97,7 @@ dice_exp.visualize_as_dataframe(show_only_changes=True)
 Es wird als Eingabe ein Feature-Vektor aus den Testdaten verwendet, der in Tabelle \ref{tab:cf_input} dargestellt ist. Die durch den Vektor repräsentierte Person befindet sich in der niedrigen Einkommensklasse. DiCE soll nun erklären, welche Aktionen die Person durchführen könnte, um in die höhere Einkommensklasse aufzusteigen.
 \begin{table}[h]
 	\centering
-	\caption{Der Eingabevektor (Zeile 0) aus dem Testset, für den Counterfactuals generiert werden sollen. Das Modell sagt ein hohes Einkommen (0.671) voraus.}
+	\caption{Der Eingabevektor (Zeile 0) aus dem Testset, für den Counterfactuals generiert werden sollen.}
 	\label{tab:cf_input}
 	\small
 	\begin{tabular}{|c | c |c |c |c |c |c |c |c|}
@@ -113,7 +113,7 @@ In Tabelle \ref{tab:cf_output} sind die vier generierten Erklärungen für die P
 
 \begin{table}[h]
 	\centering
-	\caption{Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}
+	\caption{Das diverse Set an generierten Counterfactuals. Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}
 	\label{tab:cf_output}
 	\small
 	\begin{tabular}{|c | c |c |c |c |c |c |c |c|}
@@ -144,7 +144,7 @@ dice_exp.visualize_as_dataframe(show_only_changes=True)
 
 \begin{table}[h]
 	\centering
-	\caption{Das diverse Set an generierten Counterfactuals (Ergebnis 0.0). Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}
+	\caption{Das diverse Set an generierten Counterfactuals. Es werden nur die Features angezeigt, die sich vom Eingabevektor unterscheiden.}
 	\label{tab:cf_output_optimized}
 	\small
 	\begin{tabular}{|c | c |c |c |c |c |c |c |c|}
